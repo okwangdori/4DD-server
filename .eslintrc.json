@@ -1,0 +1,68 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": [
+        "react-app",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "prettier/prettier",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx" : true
+        },
+        "ecmaVersion": "latest", //13
+        "sourceType": "module",
+        "env": {
+            // I write for browser
+            "browser": true,
+            // in CommonJS
+            "node": true
+        }
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "react/jsx-filename-extension":["warn",{"extensions":[".tsx"]}],
+        "import/extensions":[
+            "error",
+            "ignorePackages",
+            {
+              "ts":"never",
+              "tsx":"never"
+            }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["off"],
+        "react-hooks/rules-of-hooks":"error",
+        "react-hooks/exhaustive-deps":"warn",
+        "no-console":"off",
+        "@typescript-eslint/no-console":"off"
+        // "@typescript-eslint/explicit-function-return-type":[
+        //     "error",
+        //     {
+        //         "allowExpressions":true
+        //     }
+        // ],
+    },
+    "settings":{
+        "import/resolver":{
+            "typescript":{}
+        }
+    }
+}
