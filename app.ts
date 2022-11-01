@@ -19,7 +19,7 @@ async function startServer() {
   app.use('/api', require('./src/api'));	// /api 엔드포인트에 요청이 들어오면 api 폴더로 분기한다.
 
   app.get('/', (req: Request, res: Response, next: NextFunction) => {
-      res.send('Hi! This is my first express server. My name is Woojin.');
+      res.send('Hi! This is my first express server. My name is 4DD.');
   });
  
   db.mongoose
