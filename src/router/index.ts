@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import postRouter from "./postRouter";
+import userRouter from "./userRouter";
 import unitRouter from "./unitRouter";
 
 const router: Router = Router();
@@ -9,5 +10,8 @@ router.use('/post', postRouter);
 
 //단원 api
 router.use('/unit/title', unitRouter);
+
+//사용자 api
+router.use('/user', userRouter);
 
 export default router;
