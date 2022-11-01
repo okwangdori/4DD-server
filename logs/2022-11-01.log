@@ -260,3 +260,165 @@
     
 2022-11-01 17:27:59 [Winston Log] info: Mongoose Connected ...
         
+2022-11-01 19:15:25 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 19:15:25 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 19:15:46 [Winston Log] info: [0mGET / [33m404[0m 3.069 ms - 139[0m
+
+2022-11-01 19:17:20 [Winston Log] info: [0mPOST /api/auth/register [33m404[0m 0.562 ms - 157[0m
+
+2022-11-01 19:36:36 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 19:36:36 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 19:37:43 [Winston Log] info: [0mPOST /api/user/register [33m404[0m 1.579 ms - 157[0m
+
+2022-11-01 19:38:36 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 1.474 ms - 163[0m
+
+2022-11-01 19:38:36 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 0.636 ms - 163[0m
+
+2022-11-01 19:38:40 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 0.381 ms - 163[0m
+
+2022-11-01 19:38:40 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 0.333 ms - 163[0m
+
+2022-11-01 19:40:06 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 0.515 ms - 163[0m
+
+2022-11-01 19:40:08 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 0.296 ms - 163[0m
+
+2022-11-01 19:40:08 [Winston Log] info: [0mGET /635fabf8bf0c844b8f72c097 [33m404[0m 0.363 ms - 163[0m
+
+2022-11-01 19:41:11 [Winston Log] info: [0mGET / [33m404[0m 0.682 ms - 139[0m
+
+2022-11-01 19:41:38 [Winston Log] info: [0mGET / [33m404[0m 0.694 ms - 139[0m
+
+2022-11-01 19:42:45 [Winston Log] info: [0mGET / [33m404[0m 0.516 ms - 139[0m
+
+2022-11-01 19:44:01 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 19:44:01 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 37.507 ms - 263[0m
+
+2022-11-01 19:44:38 [Winston Log] info: [0mGET / [33m404[0m 0.700 ms - 139[0m
+
+2022-11-01 19:45:07 [Winston Log] info: [0mGET /unit [33m404[0m 0.353 ms - 143[0m
+
+2022-11-01 19:45:15 [Winston Log] info: @@@@@@@@@@@@@@@@@@@@@@@ : 
+2022-11-01 19:45:15 [Winston Log] info: @@@@@@@@@@@@@@@@@@resresresresres : 
+2022-11-01 19:45:15 [Winston Log] error: errorrrrrrrrrrrrr :  res.status is not a function
+2022-11-01 19:54:03 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 19:54:04 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 19:54:10 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 19:54:10 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 20.016 ms - 263[0m
+
+2022-11-01 19:54:10 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 19:54:10 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 10.902 ms - 263[0m
+
+2022-11-01 19:54:38 [Winston Log] info: [0mPOST /api/user/register [33m404[0m 1.336 ms - 157[0m
+
+2022-11-01 20:01:55 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:01:55 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 15.783 ms - 263[0m
+
+2022-11-01 20:01:58 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:01:58 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 11.203 ms - 263[0m
+
+2022-11-01 20:01:58 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:01:58 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 19.320 ms - 263[0m
+
+2022-11-01 20:03:39 [Winston Log] error: fail :  서버 내부 오류
+2022-11-01 20:03:39 [Winston Log] info: [0mPOST /user/register [31m500[0m 25.464 ms - 63[0m
+
+2022-11-01 20:04:03 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:04:03 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 12.555 ms - 263[0m
+
+2022-11-01 20:04:03 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:04:03 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 11.099 ms - 263[0m
+
+2022-11-01 20:04:15 [Winston Log] error: fail :  서버 내부 오류
+2022-11-01 20:04:15 [Winston Log] info: [0mPOST /user/register [31m500[0m 11.673 ms - 63[0m
+
+2022-11-01 20:14:50 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:14:50 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:19:28 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:19:28 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:19:31 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:19:31 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:19:38 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:19:38 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 34.309 ms - 263[0m
+
+2022-11-01 20:19:38 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:19:38 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 40.442 ms - 263[0m
+
+2022-11-01 20:19:50 [Winston Log] error: fail :  서버 내부 오류
+2022-11-01 20:19:50 [Winston Log] info: [0mPOST /user/register [31m500[0m 20.803 ms - 63[0m
+
+2022-11-01 20:25:05 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:25:05 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:25:10 [Winston Log] info: ############# 1 : 
+2022-11-01 20:25:10 [Winston Log] error: fail :  서버 내부 오류
+2022-11-01 20:25:10 [Winston Log] info: [0mPOST /user/register [31m500[0m 26.844 ms - 63[0m
+
+2022-11-01 20:25:54 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:25:54 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:25:57 [Winston Log] error: fail :  서버 내부 오류
+2022-11-01 20:25:57 [Winston Log] info: [0mPOST /user/register [31m500[0m 15.368 ms - 63[0m
+
+2022-11-01 20:27:36 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:27:36 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:27:39 [Winston Log] info: ############# 2 : 
+2022-11-01 20:27:39 [Winston Log] error: fail :  서버 내부 오류
+2022-11-01 20:27:39 [Winston Log] info: [0mPOST /user/register [31m500[0m 31.247 ms - 63[0m
+
+2022-11-01 20:29:40 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:29:40 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 15.088 ms - 263[0m
+
+2022-11-01 20:29:40 [Winston Log] info: success :  포스팅 조회 성공
+2022-11-01 20:29:40 [Winston Log] info: [0mGET /post/635fabf8bf0c844b8f72c097 [32m201[0m 11.686 ms - 263[0m
+
+2022-11-01 20:30:24 [Winston Log] info: ############# 2 : 
+2022-11-01 20:30:24 [Winston Log] info: ############# 1 : 
+2022-11-01 20:30:24 [Winston Log] info: success :  회원가입 성공
+2022-11-01 20:30:24 [Winston Log] info: [0mPOST /user/register [32m201[0m 22.733 ms - 103[0m
+
+2022-11-01 20:31:02 [Winston Log] info: success :  사용자 조회 성공
+2022-11-01 20:31:02 [Winston Log] info: [0mPOST /user/login [32m201[0m 10.267 ms - 77[0m
+
+2022-11-01 20:31:13 [Winston Log] info: success :  사용자 조회 성공
+2022-11-01 20:31:13 [Winston Log] info: [0mPOST /user/login [32m201[0m 11.391 ms - 77[0m
+
+2022-11-01 20:46:25 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:46:25 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:50:52 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:50:52 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-01 20:51:25 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-01 20:51:26 [Winston Log] info: Mongoose Connected ...
+        

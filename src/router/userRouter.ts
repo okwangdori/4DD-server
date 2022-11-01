@@ -4,7 +4,8 @@ import { userController } from "../controllers";
 const router: Router = express.Router();
 
 router.get('/:userId', userController.findUserById);
-router.post('/', userController.createUser);
+router.post('/register', userController.createUser);
+router.post('/login', userController.findUserByEmail);
 router.put('/:userId', userController.updateUser);
 router.delete('/:userId', userController.deleteUser);
 

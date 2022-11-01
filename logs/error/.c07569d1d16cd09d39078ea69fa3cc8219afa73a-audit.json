@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 2
+    },
+    "auditLog": "C:\\Workspace\\project\\4DD_server\\logs\\error\\.c07569d1d16cd09d39078ea69fa3cc8219afa73a-audit.json",
+    "files": [
+        {
+            "date": 1667297724641,
+            "name": "C:\\Workspace\\project\\4DD_server\\logs\\error\\2022-11-01.error.log",
+            "hash": "81eb5e203f74994f2967fda6845782b57c4a5fc7ea24437f57aa3a3b286150bd"
+        }
+    ],
+    "hashType": "sha256"
+}
