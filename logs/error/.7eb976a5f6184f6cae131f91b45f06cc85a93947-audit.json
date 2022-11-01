@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\error\\.7eb976a5f6184f6cae131f91b45f06cc85a93947-audit.json",
+    "files": [
+        {
+            "date": 1667222897763,
+            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\error\\2022-10-31.error.log",
+            "hash": "991e3968ef7dad7aacc7d1be43a528ff9a5b4b95cb8d8af24b02815a9260ba43"
+        }
+    ],
+    "hashType": "sha256"
+}

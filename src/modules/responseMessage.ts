@@ -10,6 +10,12 @@ const message = {
     CREATE_POST_SUCCESS: '포스팅 생성 성공',
     DELETE_POST_SUCCESS: '포스팅 삭제 성공',
     UPDATE_POST_SUCCESS: '포스팅 수정 성공',
+
+    // 단원 조회
+    READ_UNIT_TITLE_SUCCESS: '단원 조회 성공',
+    CREATE_UNIT_TITLE_SUCCESS : '단원 생성 성공',
+    DELETE_UNIT_TITLE_SUCCESS: '단원 삭제 성공',
+    UPDATE_UNIT_TITLE_SUCCESS: '단원 수정 성공',
 }
 
 export default message;

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import config from "../config";
+import logger from '../log/logger';
 
 const connectDB = async () => {
     try {
@@ -7,9 +8,10 @@ const connectDB = async () => {
 
         mongoose.set('autoCreate', true);
 
-        console.log("Mongoose Connected ...");
+        logger.info(`Mongoose Connected ...
+        `);
     } catch (err: any) {
-        console.error(err.message);
+        logger.error(err.message);
         process.exit(1);
     }
 };

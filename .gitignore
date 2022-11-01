@@ -6,6 +6,9 @@
 # testing
 /src/test
 
+# log
+\src\logs
+
 # production
 /build
 

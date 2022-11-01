@@ -1,0 +1,138 @@
+2022-11-01 00:01:57 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:49:13
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:02:13 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:49:13
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:04:07 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:49:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:16:42 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:49:13
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:16:42 [Winston Log] error: uncaughtException: datas.render is not a function
+TypeError: datas.render is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\services\unitTitleService.ts:64:26
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\node_modules\mongoose\lib\model.js:5207:18
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2022-11-01 00:38:05 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:49:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:38:05 [Winston Log] error: uncaughtException: res.render is not a function
+TypeError: res.render is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\services\unitTitleService.ts:65:17
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\node_modules\mongoose\lib\model.js:5207:18
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2022-11-01 00:40:37 [Winston Log] error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/services/unitTitleService.ts(96,1): error TS1005: ',' expected.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/services/unitTitleService.ts(96,1): error TS1005: ',' expected.
+
+    at createTSError (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:863:19)
+    at C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+2022-11-01 00:40:41 [Winston Log] error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/services/unitTitleService.ts(96,1): error TS1005: ',' expected.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/services/unitTitleService.ts(96,1): error TS1005: ',' expected.
+
+    at createTSError (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:863:19)
+    at C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\hwi\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+2022-11-01 00:46:36 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:51:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:48:13 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:51:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:50:07 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:51:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:52:04 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:53:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:55:48 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:53:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 00:56:27 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:53:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 15:04:04 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:53:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 16:56:50 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:53:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 17:06:05 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:58:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 17:11:05 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:59:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2022-11-01 17:15:03 [Winston Log] error: uncaughtException: res.status is not a function
+TypeError: res.status is not a function
+    at C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:59:13
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\hwi\Desktop\dev\workspace\ForDD\server\src\controllers\unitTitleController.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

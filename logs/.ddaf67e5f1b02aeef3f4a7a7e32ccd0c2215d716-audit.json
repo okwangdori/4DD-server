@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 2
+    },
+    "auditLog": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\.ddaf67e5f1b02aeef3f4a7a7e32ccd0c2215d716-audit.json",
+    "files": [
+        {
+            "date": 1667224401889,
+            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\2022-10-31.log",
+            "hash": "abf260d19108a69d0574b09afce917cdaf456318519ff2061d129b2fea072079"
+        },
+        {
+            "date": 1667228513779,
+            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\2022-11-01.log",
+            "hash": "f9ad520e69be4ee84e8acbea1f2cb6d32d873fac0b95102032299628635c1281"
+        }
+    ],
+    "hashType": "sha256"
+}

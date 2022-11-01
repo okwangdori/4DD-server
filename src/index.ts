@@ -5,6 +5,8 @@ const app = express();
 import connectDB from "./loaders/db";
 import routes from './router';
 const cors = require("cors");
+import logger from './log/logger';
+import morgan from './log/customMorgan';
 
 connectDB(); // DB 연결하기
 
@@ -12,7 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //   app.use(morgan('dev'))
-app.use(cors())
+app.use(cors());
+
+app.use(morgan);
 
 app.use(routes);   //라우터 분리
 // error handler
@@ -20,7 +24,7 @@ app.use(routes);   //라우터 분리
 interface ErrorType {
   message: string;
   status: number;
-}
+};
 
 // 모든 에러에 대한 핸들링
 app.use(function (err: ErrorType, req: Request, res: Response, next: NextFunction) {
@@ -31,17 +35,18 @@ app.use(function (err: ErrorType, req: Request, res: Response, next: NextFunctio
   // render the error page
   res.status(err.status || 500);
   res.render("error");
+
+  logger.error(res);
 });
 
 app
   .listen(config.port, () => {
-    console.log(`
-    ################################################
-          🛡️  Server listening on port 🛡️
-    ################################################
-  `);
+    logger.info(`
+    ################ Server listening on port ${config.port} ################
+    `);
   })
   .on("error", (err) => {
+    logger.error(err);
     console.error(err);
     process.exit(1);
   });
