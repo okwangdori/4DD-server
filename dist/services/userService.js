@@ -13,17 +13,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_1 = __importDefault(require("../models/user"));
-const createUser = (userCreateDto) => __awaiter(void 0, void 0, void 0, function* () {
-    var _a, _b;
+const jwt_utill_1 = require("../utills/jwt.utill");
+const logger_1 = __importDefault(require("../log/logger"));
+const signup = (userCreateDto) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // create를 위해 각 filed명에 값들을 할당시켜준다.
         const user = new user_1.default({
-            title: userCreateDto.title,
-            content: userCreateDto.content,
-            additional: {
-                category: (_a = userCreateDto.additional) === null || _a === void 0 ? void 0 : _a.category,
-                season: (_b = userCreateDto.additional) === null || _b === void 0 ? void 0 : _b.season,
-            }
+            name: userCreateDto.name,
+            email: userCreateDto.email,
+            password: userCreateDto.password
         });
         yield user.save();
         const data = {
@@ -64,6 +62,45 @@ const findUserById = (userId) => __awaiter(void 0, void 0, void 0, function* () 
         throw error;
     }
 });
+const getUsers = () => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        logger_1.default.info("@!@@@#@#@#@# test");
+        const users = yield user_1.default.find();
+        if (!users) {
+            return null;
+        }
+        return users;
+    }
+    catch (error) {
+        console.log(error);
+        throw error;
+    }
+});
+const login = (userCreateDto) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const user = yield user_1.default.findOne({ email: userCreateDto.email });
+        // 계정, 비밀번호 체크
+        if (!user || user.password !== userCreateDto.password) {
+            return null;
+        }
+        const tokenOption = {
+            id: user._id,
+            email: user.email
+        };
+        const userData = {
+            id: user._id,
+            name: user.name,
+            email: user.email,
+            accessToken: (0, jwt_utill_1.createToken)('access', tokenOption),
+            refreshToken: (0, jwt_utill_1.createToken)('refresh', tokenOption)
+        };
+        return userData;
+    }
+    catch (error) {
+        console.log(error);
+        throw error;
+    }
+});
 const deleteUser = (userId) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const user = yield user_1.default.findByIdAndDelete(userId);
@@ -78,9 +115,11 @@ const deleteUser = (userId) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.default = {
-    createUser,
+    signup,
     updateUser,
     findUserById,
+    getUsers,
+    login,
     deleteUser,
 };
 //# sourceMappingURL=userService.js.map

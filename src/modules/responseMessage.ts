@@ -22,6 +22,7 @@ const message = {
     CREATE_USER_SUCCESS: '회원가입 성공',
     DELETE_USER_SUCCESS: '사용자 삭제 성공',
     UPDATE_USER_SUCCESS: '사용자 수정 성공',
+    INVALID_EMAIL_OR_PASSWORD: '유효하지 않은 이메일 또는 비밀번호입니다.'
 }
 
 export default message;

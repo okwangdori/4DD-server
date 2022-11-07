@@ -15,21 +15,18 @@ app.use(express.json());
 
 //   app.use(morgan('dev'))
 app.use(cors());
-
 app.use(morgan);
-
 app.use(routes);   //라우터 분리
-// error handler
 
+// error handler
 interface ErrorType {
   message: string;
   status: number;
 };
 
 // 모든 에러에 대한 핸들링
-app.use(function (err: ErrorType, req: Request, res: Response, next: NextFunction) {
-
-  res.locals.message = err.message;
+app.use(function (err: ErrorType, req: Request, res: Response, next: NextFunction) {  
+  res.locals.message = err.message;  
   res.locals.error = req.app.get("env") === "production" ? err : {};
 
   // render the error page

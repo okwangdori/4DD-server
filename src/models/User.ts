@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { userInfo } from "../interfaces/user/userInfo";
+import { userCreateDto } from "../interfaces/user/userCreateDto";
 
 const UserSchema = new mongoose.Schema({
     name: {
@@ -16,4 +16,4 @@ const UserSchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model<userInfo & mongoose.Document>("User", UserSchema);
+export default mongoose.model<userCreateDto & mongoose.Document>("User", UserSchema);

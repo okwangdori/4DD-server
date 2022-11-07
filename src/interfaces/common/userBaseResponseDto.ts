@@ -3,4 +3,6 @@ import mongoose from "mongoose";
 
 export interface userBaseResponseDto {
     _id: mongoose.Schema.Types.ObjectId;
+    accessToken?: string;
+    refreshToken?: string;
 }

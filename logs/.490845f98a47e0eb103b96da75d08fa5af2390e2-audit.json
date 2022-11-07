@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 2
+    },
+    "auditLog": "C:\\Workspace\\4DD-server\\logs\\.490845f98a47e0eb103b96da75d08fa5af2390e2-audit.json",
+    "files": [
+        {
+            "date": 1667747498506,
+            "name": "C:\\Workspace\\4DD-server\\logs\\2022-11-07.exception.log",
+            "hash": "6b884c1b69a5cea23933c6be214960a7f9b6c769c3f25b710a9c8309f2e81f2d"
+        },
+        {
+            "date": 1667833393015,
+            "name": "C:\\Workspace\\4DD-server\\logs\\2022-11-08.exception.log",
+            "hash": "e080ae8801b9a44258168d1124ede99f19f61e5b9bad707bacabee89e7f71751"
+        }
+    ],
+    "hashType": "sha256"
+}
