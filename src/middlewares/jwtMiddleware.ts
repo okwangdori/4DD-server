@@ -7,7 +7,8 @@ const jwtMiddleware = async (req: Request, res: Response, next: NextFunction) =>
   const accessToken = getAccessToken(req.headers.authorization);
   const refreshToken = getRefreshToken(req.cookies);
 
-  logger.info("@@@@@@ cookie : "+ JSON.stringify(req.cookies));
+  logger.info("@@@@@@ cookie : "+ JSON.stringify(req.headers.cookie));
+  logger.info("@@@@@@ headers : "+ JSON.stringify(req.headers.authorization));
   logger.info("@@@@@@ accessToken : "+ accessToken);
   logger.info("@@@@@@ refreshToken : "+ refreshToken);
   

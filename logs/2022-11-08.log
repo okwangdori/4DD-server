@@ -3,3 +3,742 @@
     
 2022-11-08 00:03:14 [Winston Log] info: Mongoose Connected ...
         
+2022-11-08 17:25:17 [Winston Log] error:   Couldn't find .env file  
+2022-11-08 17:27:18 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 17:27:18 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 17:27:48 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:27:48 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:27:48 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:27:48 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:27:48 [Winston Log] info: [0mPOST /user/login [32m201[0m 31.535 ms - 600[0m
+
+2022-11-08 17:32:28 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 17:32:28 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 17:33:14 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:33:14 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:33:14 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:33:14 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:33:14 [Winston Log] info: [0mPOST /user/login [32m201[0m 29.293 ms - 600[0m
+
+2022-11-08 17:36:10 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 17:36:10 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 17:36:24 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:36:24 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:36:24 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:36:24 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:36:24 [Winston Log] info: [0mPOST /user/login [32m201[0m 29.152 ms - 600[0m
+
+2022-11-08 17:39:08 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 17:39:08 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 17:39:20 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:39:20 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:39:20 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:39:20 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:39:20 [Winston Log] info: [0mPOST /user/login [32m201[0m 36.024 ms - 600[0m
+
+2022-11-08 17:45:58 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:45:58 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:45:58 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:45:58 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:45:58 [Winston Log] info: [0mGET /user/info [32m201[0m 19.073 ms - 407[0m
+
+2022-11-08 17:51:01 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 17:51:02 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 17:51:07 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:51:07 [Winston Log] info: @@@@@@ headers : {"cookie":"refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MDE1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.kKBw6DUDdfEZIF7mBaGW5YAjvjt5aTZEhRdEV2MUQNA","accept-language":"ko,en;q=0.9,en-US;q=0.8","accept-encoding":"gzip, deflate, br","referer":"http://127.0.0.1:5173/","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.26","authorization":"[object Object]","sec-ch-ua-mobile":"?0","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Microsoft Edge\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"","connection":"close","host":"localhost:8080"}
+2022-11-08 17:51:07 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:51:07 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:51:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:51:07 [Winston Log] info: [0mGET /user/info [32m201[0m 34.014 ms - 407[0m
+
+2022-11-08 17:52:02 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 17:52:03 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 17:52:05 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:52:05 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 17:52:05 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:52:05 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:52:05 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:52:05 [Winston Log] info: [0mGET /user/info [32m201[0m 26.437 ms - 407[0m
+
+2022-11-08 17:52:55 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:52:55 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:52:55 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:52:55 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:52:55 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:52:55 [Winston Log] info: [0mGET /user/info [32m201[0m 18.916 ms - 407[0m
+
+2022-11-08 17:54:25 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:54:25 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:54:25 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:54:25 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:54:25 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:54:25 [Winston Log] info: [0mGET /user/info [32m201[0m 18.665 ms - 407[0m
+
+2022-11-08 17:54:31 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:54:31 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:54:31 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:54:31 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:54:31 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:54:31 [Winston Log] info: [0mGET /user/info [32m201[0m 22.917 ms - 407[0m
+
+2022-11-08 17:55:29 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:55:29 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:55:29 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:55:29 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:55:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:55:29 [Winston Log] info: [0mGET /user/info [32m201[0m 14.302 ms - 407[0m
+
+2022-11-08 17:57:17 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:57:17 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:57:17 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:57:17 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:57:17 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:57:17 [Winston Log] info: [0mGET /user/info [32m201[0m 15.239 ms - 407[0m
+
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:57:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:57:41 [Winston Log] info: [0mGET /user/info [32m201[0m 14.545 ms - 407[0m
+
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:57:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:57:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:57:41 [Winston Log] info: [0mGET /user/info [32m201[0m 15.651 ms - 407[0m
+
+2022-11-08 17:57:42 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:57:42 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:57:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:57:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:57:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:57:42 [Winston Log] info: [0mGET /user/info [32m201[0m 16.189 ms - 407[0m
+
+2022-11-08 17:58:39 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 17:58:39 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 17:58:39 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 17:58:39 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 17:58:39 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 17:58:39 [Winston Log] info: [0mGET /user/info [32m201[0m 15.635 ms - 407[0m
+
+2022-11-08 18:00:22 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:00:22 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTg1NjAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5Njc2MH0.3ucyMTobQxEl19aJJndipdWrDs-juW8xEny8VhsrXRQ"
+2022-11-08 18:00:22 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:00:22 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:00:22 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:00:22 [Winston Log] info: [0mGET /user/info [32m201[0m 16.801 ms - 407[0m
+
+2022-11-08 18:01:24 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:01:24 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:01:24 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:01:24 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:01:24 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:01:24 [Winston Log] info: [0mPOST /user/login [32m201[0m 15.815 ms - 600[0m
+
+2022-11-08 18:01:48 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:01:48 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 18:01:48 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:01:48 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:01:48 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:01:48 [Winston Log] info: [0mGET /user/info [32m201[0m 14.784 ms - 407[0m
+
+2022-11-08 18:02:32 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:02:32 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTk4ODQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5ODA4NH0.SOydGLBem7fYXFxubWqpoFkoNHWhB1jPVVRyHZ21dnw"
+2022-11-08 18:02:32 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:02:32 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:02:32 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:02:32 [Winston Log] info: [0mGET /user/info [32m201[0m 13.432 ms - 407[0m
+
+2022-11-08 18:02:53 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:02:53 [Winston Log] info: @@@@@@ headers : "test"
+2022-11-08 18:02:53 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:02:53 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:02:53 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:02:53 [Winston Log] info: [0mGET /user/info [32m201[0m 17.546 ms - 407[0m
+
+2022-11-08 18:03:16 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:03:16 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:03:16 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:03:16 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:03:16 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:03:16 [Winston Log] info: [0mPOST /user/login [32m201[0m 18.730 ms - 600[0m
+
+2022-11-08 18:03:25 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:03:25 [Winston Log] info: @@@@@@ headers : "test"
+2022-11-08 18:03:25 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:03:25 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:03:25 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:03:25 [Winston Log] info: [0mGET /user/info [32m201[0m 16.072 ms - 407[0m
+
+2022-11-08 18:04:29 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:04:29 [Winston Log] info: @@@@@@ headers : "{\"id\":\"63610350375390542917eba5\",\"name\":\"jiwoh\",\"email\":\"lu521ck@naver.com\",\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4OTk5OTYsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5ODE5Nn0.u_fV8pA4Fd5o1n5EX6SbaLsm_XV1rlssABLwaB6OPdg\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MDI5OTYsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2Nzg5ODE5Nn0.2Ugta4wqPhUIbL3vqyT_pcVFgb_oDZrygWiBA1OTrZE\"}"
+2022-11-08 18:04:29 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:04:29 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:04:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:04:29 [Winston Log] info: [0mGET /user/info [32m201[0m 13.778 ms - 407[0m
+
+2022-11-08 18:06:00 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:06:00 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:06:00 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:06:00 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:06:00 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:06:00 [Winston Log] info: [0mPOST /user/login [32m201[0m 15.522 ms - 600[0m
+
+2022-11-08 18:06:03 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:06:03 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:06:03 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:06:03 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:06:03 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:06:03 [Winston Log] info: [0mGET /user/info [32m201[0m 15.282 ms - 407[0m
+
+2022-11-08 18:06:31 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:06:31 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:06:31 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:06:31 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:06:31 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:06:31 [Winston Log] info: [0mGET /user/info [32m201[0m 14.847 ms - 407[0m
+
+2022-11-08 18:09:17 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:09:17 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:09:17 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:09:17 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:09:17 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:09:17 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.367 ms - 600[0m
+
+2022-11-08 18:09:29 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:09:29 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:09:29 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:09:29 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:09:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:09:29 [Winston Log] info: [0mGET /user/info [32m201[0m 18.636 ms - 407[0m
+
+2022-11-08 18:11:01 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:11:01 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:11:01 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:11:01 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:11:01 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:11:01 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.560 ms - 600[0m
+
+2022-11-08 18:11:12 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:11:12 [Winston Log] info: @@@@@@ headers : "test"
+2022-11-08 18:11:12 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:11:12 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:11:12 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:11:12 [Winston Log] info: [0mGET /user/info [32m201[0m 15.793 ms - 407[0m
+
+2022-11-08 18:11:37 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:11:37 [Winston Log] info: @@@@@@ headers : "test"
+2022-11-08 18:11:37 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:11:37 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:11:37 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:11:37 [Winston Log] info: [0mGET /user/info [32m201[0m 13.383 ms - 407[0m
+
+2022-11-08 18:14:51 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:14:51 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:14:51 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:14:51 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:14:51 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:14:51 [Winston Log] info: [0mPOST /user/login [32m201[0m 12.397 ms - 600[0m
+
+2022-11-08 18:14:58 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:14:58 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 18:14:58 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:14:58 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:14:58 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:14:58 [Winston Log] info: [0mGET /user/info [32m201[0m 15.776 ms - 407[0m
+
+2022-11-08 18:18:56 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:18:56 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 18:18:56 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:18:56 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:18:56 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:18:56 [Winston Log] info: [0mPOST /user/login [32m201[0m 12.057 ms - 600[0m
+
+2022-11-08 18:19:16 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 18:19:16 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 18:19:16 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 18:19:16 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 18:19:16 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 18:19:16 [Winston Log] info: [0mGET /user/info [32m201[0m 12.813 ms - 407[0m
+
+2022-11-08 19:35:05 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 19:35:05 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 19:35:16 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:35:16 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:35:16 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:35:16 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:35:16 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:35:16 [Winston Log] info: [0mPOST /user/login [32m201[0m 31.833 ms - 600[0m
+
+2022-11-08 19:35:42 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:35:42 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 19:35:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:35:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:35:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:35:42 [Winston Log] info: [0mGET /user/info [32m201[0m 19.912 ms - 407[0m
+
+2022-11-08 19:36:46 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:36:46 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:36:46 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:36:46 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:36:46 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:36:46 [Winston Log] info: [0mPOST /user/login [32m201[0m 22.514 ms - 600[0m
+
+2022-11-08 19:36:58 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:36:58 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:36:58 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:36:58 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:36:58 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:36:58 [Winston Log] info: [0mGET /user/info [32m201[0m 16.638 ms - 407[0m
+
+2022-11-08 19:38:35 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:38:35 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:38:35 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:38:35 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:38:35 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:38:35 [Winston Log] info: [0mPOST /user/login [32m201[0m 16.389 ms - 600[0m
+
+2022-11-08 19:38:45 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:38:45 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:38:45 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:38:45 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:38:45 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:38:45 [Winston Log] info: [0mGET /user/info [32m201[0m 16.294 ms - 407[0m
+
+2022-11-08 19:40:34 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:40:34 [Winston Log] info: @@@@@@ headers : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDU3MTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwMzkxNX0.k92FfGyQ4TE_kGz29cWpoikRm3oRGPL41jb1CoAj03Q"
+2022-11-08 19:40:34 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:40:34 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:40:34 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:40:34 [Winston Log] info: [0mPOST /user/login [32m201[0m 37.105 ms - 600[0m
+
+2022-11-08 19:43:17 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:43:17 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:43:17 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:43:17 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:43:17 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:43:17 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.818 ms - 600[0m
+
+2022-11-08 19:43:22 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:43:22 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:43:22 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:43:22 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:43:22 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:43:22 [Winston Log] info: [0mGET /user/info [32m201[0m 14.666 ms - 407[0m
+
+2022-11-08 19:46:50 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:46:50 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:46:50 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:46:50 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:46:50 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:46:50 [Winston Log] info: [0mPOST /user/login [32m201[0m 14.081 ms - 600[0m
+
+2022-11-08 19:47:00 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:47:00 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:47:00 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:47:00 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:47:00 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:47:00 [Winston Log] info: [0mGET /user/info [32m201[0m 15.126 ms - 407[0m
+
+2022-11-08 19:48:02 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:48:02 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:48:02 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:48:02 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:48:02 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:48:02 [Winston Log] info: [0mGET /user/info [32m201[0m 13.948 ms - 407[0m
+
+2022-11-08 19:48:27 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:48:27 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:48:27 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:48:27 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:48:27 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:48:27 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.696 ms - 600[0m
+
+2022-11-08 19:48:42 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:48:42 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYyMTAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDQxMH0.kmN1EUcVAa5R_2Nr5SDMUaIWAYtuHrfEsH58Olo0hJ4\""
+2022-11-08 19:48:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:48:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:48:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:48:42 [Winston Log] info: [0mGET /user/info [32m201[0m 16.936 ms - 407[0m
+
+2022-11-08 19:49:03 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:49:03 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:49:03 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:49:03 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:49:03 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:49:03 [Winston Log] info: [0mGET /user/info [32m201[0m 15.240 ms - 407[0m
+
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:49:16 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:49:16 [Winston Log] info: [0mGET /user/info [32m201[0m 15.634 ms - 407[0m
+
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:49:16 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:49:16 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:49:16 [Winston Log] info: [0mGET /user/info [32m201[0m 17.165 ms - 407[0m
+
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:49:32 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:49:32 [Winston Log] info: [0mGET /user/info [32m201[0m 15.863 ms - 407[0m
+
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:49:32 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:49:33 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:49:33 [Winston Log] info: [0mGET /user/info [32m201[0m 16.851 ms - 407[0m
+
+2022-11-08 19:49:33 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:49:33 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:49:33 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:49:33 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:49:33 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:49:33 [Winston Log] info: [0mGET /user/info [32m201[0m 13.255 ms - 407[0m
+
+2022-11-08 19:50:21 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:50:21 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:50:21 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:50:21 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:50:21 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:50:21 [Winston Log] info: [0mPOST /user/login [32m201[0m 14.294 ms - 600[0m
+
+2022-11-08 19:50:23 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:50:23 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:50:23 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:50:23 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:50:23 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:50:23 [Winston Log] info: [0mGET /user/info [32m201[0m 19.746 ms - 407[0m
+
+2022-11-08 19:50:53 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:50:53 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDYzMDcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDUwN30.4VKwMq1hFMozIDXHH-ZFOSCntbup1jXpHLzRljFos9I\""
+2022-11-08 19:50:53 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:50:53 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:50:53 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:50:53 [Winston Log] info: [0mGET /user/info [32m201[0m 17.226 ms - 407[0m
+
+2022-11-08 19:54:59 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:54:59 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:54:59 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:54:59 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:54:59 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:54:59 [Winston Log] info: [0mPOST /user/login [32m201[0m 18.117 ms - 600[0m
+
+2022-11-08 19:55:13 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:55:13 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:55:13 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:55:13 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:55:13 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:55:13 [Winston Log] info: [0mGET /user/info [32m201[0m 14.029 ms - 407[0m
+
+2022-11-08 19:55:29 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:55:29 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:55:29 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:55:29 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:55:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:55:29 [Winston Log] info: [0mGET /user/info [32m201[0m 13.362 ms - 407[0m
+
+2022-11-08 19:56:31 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:31 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:56:31 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:31 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:31 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:31 [Winston Log] info: [0mPOST /user/login [32m201[0m 16.679 ms - 600[0m
+
+2022-11-08 19:56:32 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:32 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:32 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:32 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:32 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:32 [Winston Log] info: [0mGET /user/info [32m201[0m 16.265 ms - 407[0m
+
+2022-11-08 19:56:39 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:39 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:39 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:39 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:39 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:39 [Winston Log] info: [0mGET /user/info [32m201[0m 12.973 ms - 407[0m
+
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:41 [Winston Log] info: [0mGET /user/info [32m201[0m 25.498 ms - 407[0m
+
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:41 [Winston Log] info: [0mGET /user/info [32m201[0m 14.435 ms - 407[0m
+
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:41 [Winston Log] info: [0mGET /user/info [32m201[0m 13.951 ms - 407[0m
+
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:41 [Winston Log] info: [0mGET /user/info [32m201[0m 13.985 ms - 407[0m
+
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:42 [Winston Log] info: [0mGET /user/info [32m201[0m 14.757 ms - 407[0m
+
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:42 [Winston Log] info: [0mGET /user/info [32m201[0m 14.364 ms - 407[0m
+
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ headers : "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDY0MjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNDYyMX0.rVH_9mMMLd3aDyXRpNMizIY1EMpkS0p0lB8kKbnEZrw\""
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:42 [Winston Log] info: [0mGET /user/info [32m201[0m 15.514 ms - 407[0m
+
+2022-11-08 19:56:52 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:56:52 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:56:52 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:56:52 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:56:52 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:56:52 [Winston Log] info: [0mPOST /user/login [32m201[0m 14.517 ms - 600[0m
+
+2022-11-08 19:57:04 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:57:04 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:57:04 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:57:04 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:57:04 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:57:04 [Winston Log] info: [0mGET /user/info [32m201[0m 27.167 ms - 407[0m
+
+2022-11-08 19:58:51 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:58:51 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:58:51 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:58:51 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:58:52 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:58:52 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.087 ms - 600[0m
+
+2022-11-08 19:59:06 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:59:06 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:59:06 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:59:06 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:59:06 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:59:06 [Winston Log] info: [0mGET /user/info [32m201[0m 35.357 ms - 407[0m
+
+2022-11-08 19:59:17 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 19:59:17 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 19:59:17 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 19:59:17 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 19:59:17 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 19:59:17 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.131 ms - 600[0m
+
+2022-11-08 20:01:19 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:01:19 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:01:19 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:01:19 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:01:19 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:01:19 [Winston Log] info: [0mPOST /user/login [32m201[0m 85.877 ms - 600[0m
+
+2022-11-08 20:01:30 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:01:30 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:01:30 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:01:30 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:01:30 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:01:30 [Winston Log] info: [0mGET /user/info [32m201[0m 15.226 ms - 407[0m
+
+2022-11-08 20:03:37 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:03:37 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:03:37 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:03:37 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:03:37 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:03:37 [Winston Log] info: [0mPOST /user/login [32m201[0m 15.993 ms - 600[0m
+
+2022-11-08 20:03:47 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:03:47 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:03:47 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:03:47 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:03:47 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:03:47 [Winston Log] info: [0mGET /user/info [32m201[0m 14.438 ms - 407[0m
+
+2022-11-08 20:07:57 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:07:57 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:07:57 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:07:57 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:07:57 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:07:57 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.187 ms - 600[0m
+
+2022-11-08 20:08:03 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:08:03 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:08:03 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:08:03 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:08:03 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:08:03 [Winston Log] info: [0mGET /user/info [32m201[0m 13.706 ms - 407[0m
+
+2022-11-08 20:16:07 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:16:07 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:16:07 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:16:07 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:16:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:16:07 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.994 ms - 600[0m
+
+2022-11-08 20:16:26 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:16:26 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:16:26 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:16:26 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:16:26 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:16:26 [Winston Log] info: [0mGET /user/info [32m201[0m 14.682 ms - 407[0m
+
+2022-11-08 20:27:56 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:27:56 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:27:56 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:27:56 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:27:56 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:27:56 [Winston Log] info: [0mPOST /user/login [32m201[0m 14.762 ms - 600[0m
+
+2022-11-08 20:28:47 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:28:47 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:28:47 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:28:47 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:28:47 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:28:47 [Winston Log] info: [0mGET /user/info [32m201[0m 15.547 ms - 407[0m
+
+2022-11-08 20:31:34 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:31:34 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:31:34 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:31:34 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:31:34 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:31:34 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.022 ms - 600[0m
+
+2022-11-08 20:31:48 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:31:48 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:31:48 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:31:48 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:31:48 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:31:48 [Winston Log] info: [0mGET /user/info [32m201[0m 13.863 ms - 407[0m
+
+2022-11-08 20:32:58 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:32:58 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:32:58 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:32:58 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:32:58 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:32:58 [Winston Log] info: [0mPOST /user/login [32m201[0m 14.583 ms - 600[0m
+
+2022-11-08 20:33:05 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:33:05 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:33:05 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:33:05 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:33:05 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:33:05 [Winston Log] info: [0mGET /user/info [32m201[0m 18.696 ms - 407[0m
+
+2022-11-08 20:40:30 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:40:30 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:40:30 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:40:30 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:40:30 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:40:30 [Winston Log] info: [0mPOST /user/login [32m201[0m 14.932 ms - 600[0m
+
+2022-11-08 20:41:11 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-08 20:41:11 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:41:11 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:41:11 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:41:11 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:41:11 [Winston Log] info: [0mPOST /user/login [32m201[0m 15.555 ms - 600[0m
+
+2022-11-08 20:43:17 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 20:43:17 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 20:43:22 [Winston Log] info: @@@@@@ cookie : {"cookie":"refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MTI0NzEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzY3MX0.M9qTRTUer-u6Y-3NHl1KmOF9FV_0vM_fHabzc9_U8wM; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDk0NzEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzY3MX0.A4nAyQTVXbkG6C99lYYGOKR6O7KPIiT5ZKhh5P8ffEY","accept-language":"ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7","accept-encoding":"gzip, deflate, br","referer":"http://127.0.0.1:5173/","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36","authorization":"[object Object]","sec-ch-ua-mobile":"?0","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"","connection":"close","host":"localhost:8080"}
+2022-11-08 20:43:22 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 20:43:22 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:43:22 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:43:22 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:43:22 [Winston Log] info: [0mGET /user/info [32m201[0m 35.677 ms - 407[0m
+
+2022-11-08 20:44:05 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 20:44:05 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-08 20:44:07 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MTI0NzEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzY3MX0.M9qTRTUer-u6Y-3NHl1KmOF9FV_0vM_fHabzc9_U8wM; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDk0NzEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzY3MX0.A4nAyQTVXbkG6C99lYYGOKR6O7KPIiT5ZKhh5P8ffEY"
+2022-11-08 20:44:07 [Winston Log] info: @@@@@@ headers : "[object Object]"
+2022-11-08 20:44:07 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:44:07 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:44:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:44:07 [Winston Log] info: [0mGET /user/info [32m201[0m 29.423 ms - 407[0m
+
+2022-11-08 20:46:00 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MTI0NzEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzY3MX0.M9qTRTUer-u6Y-3NHl1KmOF9FV_0vM_fHabzc9_U8wM; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDk0NzEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzY3MX0.A4nAyQTVXbkG6C99lYYGOKR6O7KPIiT5ZKhh5P8ffEY"
+2022-11-08 20:46:00 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:46:00 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:46:00 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:46:01 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:46:01 [Winston Log] info: [0mPOST /user/login [32m201[0m 27.139 ms - 600[0m
+
+2022-11-08 20:46:07 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MTI3NjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzk2MX0.Fe-aChU-YDCwsjBwnHVzIq1odc7TqRonUQ-04AFrlUk; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDk3NjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzk2MX0.8nhMfjrvvw7w5ha57XAarNXSnxJq5ZsCMdhZMPMYPbo"
+2022-11-08 20:46:07 [Winston Log] info: @@@@@@ headers : "ddddd"
+2022-11-08 20:46:07 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:46:07 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:46:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:46:07 [Winston Log] info: [0mGET /user/info [32m201[0m 33.099 ms - 407[0m
+
+2022-11-08 20:47:42 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MTI3NjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzk2MX0.Fe-aChU-YDCwsjBwnHVzIq1odc7TqRonUQ-04AFrlUk; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDk3NjEsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwNzk2MX0.8nhMfjrvvw7w5ha57XAarNXSnxJq5ZsCMdhZMPMYPbo"
+2022-11-08 20:47:42 [Winston Log] info: @@@@@@ headers : undefined
+2022-11-08 20:47:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:47:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:47:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:47:42 [Winston Log] info: [0mPOST /user/login [32m201[0m 18.811 ms - 600[0m
+
+2022-11-08 20:47:43 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg1MTI4NjIsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwODA2Mn0.UIbtTVkdluRP0FmzkxorbEAcisWzDwkjFid70XYs9bU; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc5MDk4NjIsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzkwODA2Mn0.pZHf98eaXyAKN6BcbPVNp2BnfDO_mUJGgGklVX6cZ2g"
+2022-11-08 20:47:43 [Winston Log] info: @@@@@@ headers : "sdfsdf"
+2022-11-08 20:47:43 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-08 20:47:43 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-08 20:47:43 [Winston Log] info: success :  사용자 조회 성공
+2022-11-08 20:47:43 [Winston Log] info: [0mGET /user/info [32m201[0m 17.114 ms - 407[0m
+
+2022-11-08 20:51:20 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-08 20:51:20 [Winston Log] info: Mongoose Connected ...
+        

@@ -9,6 +9,11 @@
             "date": 1667297724641,
             "name": "C:\\Workspace\\project\\4DD_server\\logs\\error\\2022-11-01.error.log",
             "hash": "81eb5e203f74994f2967fda6845782b57c4a5fc7ea24437f57aa3a3b286150bd"
+        },
+        {
+            "date": 1667895917045,
+            "name": "C:\\Workspace\\project\\4DD_server\\logs\\error\\2022-11-08.error.log",
+            "hash": "1cdf575c008495c7deb5589f291e2a043bae17a6f8e7e02d20902196cce5028a"
         }
     ],
     "hashType": "sha256"

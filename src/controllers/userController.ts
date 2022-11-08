@@ -58,8 +58,6 @@ const login = async (req: Request, res: Response): Promise<void> => {
     const userCreateDto: userCreateDto = req.body;
     try {
         const data = await userService.login(userCreateDto);
-        // logger.info("$$$$$$$$$$$$ REFRESHTOKEN: "+ REFRESHTOKEN);
-        // logger.info("$$$$$$$$$$$$ data re: "+ data?.refreshToken);
         res.cookie(REFRESHTOKEN, data?.refreshToken, refreshTokenCookieOptions);
         if(data) {
             res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.READ_USER_SUCCESS, data));
