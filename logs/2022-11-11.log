@@ -1,0 +1,514 @@
+2022-11-11 18:16:47 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-11 18:16:47 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-11 18:23:07 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:23:07 [Winston Log] info: [0mGET /unit/title [32m201[0m 37.273 ms - 4414[0m
+
+2022-11-11 18:23:24 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:23:24 [Winston Log] info: [0mGET /unit/title [32m201[0m 20.157 ms - 4414[0m
+
+2022-11-11 18:23:51 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:23:51 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.972 ms - 4414[0m
+
+2022-11-11 18:23:58 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:23:58 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.807 ms - 4414[0m
+
+2022-11-11 18:33:58 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:33:58 [Winston Log] info: [0mGET /unit/title [32m201[0m 18.312 ms - 4414[0m
+
+2022-11-11 18:42:44 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:42:44 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.873 ms - 4414[0m
+
+2022-11-11 18:43:17 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:43:17 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.774 ms - 4414[0m
+
+2022-11-11 18:43:17 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:43:17 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.515 ms - 4414[0m
+
+2022-11-11 18:43:34 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:43:34 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.631 ms - 4414[0m
+
+2022-11-11 18:43:35 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:43:35 [Winston Log] info: [0mGET /unit/title [32m201[0m 154.470 ms - 4414[0m
+
+2022-11-11 18:43:46 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:43:46 [Winston Log] info: [0mGET /unit/title [32m201[0m 18.084 ms - 4414[0m
+
+2022-11-11 18:44:13 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:44:13 [Winston Log] info: [0mGET /unit/title [32m201[0m 25.854 ms - 4414[0m
+
+2022-11-11 18:44:14 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:44:14 [Winston Log] info: [0mGET /unit/title [32m201[0m 29.131 ms - 4414[0m
+
+2022-11-11 18:44:41 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:44:41 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.098 ms - 4414[0m
+
+2022-11-11 18:44:49 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:44:49 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.866 ms - 4414[0m
+
+2022-11-11 18:44:49 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:44:49 [Winston Log] info: [0mGET /unit/title [32m201[0m 26.088 ms - 4414[0m
+
+2022-11-11 18:45:09 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:45:09 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.661 ms - 4414[0m
+
+2022-11-11 18:45:09 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:45:09 [Winston Log] info: [0mGET /unit/title [32m201[0m 18.592 ms - 4414[0m
+
+2022-11-11 18:45:19 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 18:45:19 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.274 ms - 4414[0m
+
+2022-11-11 19:22:33 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:22:33 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.027 ms - 4414[0m
+
+2022-11-11 19:22:37 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:22:37 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.318 ms - 4414[0m
+
+2022-11-11 19:28:37 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:28:37 [Winston Log] info: [0mGET /unit/title [32m201[0m 48.465 ms - 4414[0m
+
+2022-11-11 19:29:42 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:29:42 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.830 ms - 4414[0m
+
+2022-11-11 19:29:43 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:29:43 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.274 ms - 4414[0m
+
+2022-11-11 19:31:08 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:31:08 [Winston Log] info: [0mGET /unit/title [32m201[0m 24.181 ms - 4414[0m
+
+2022-11-11 19:35:42 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:35:42 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.987 ms - 4414[0m
+
+2022-11-11 19:36:05 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:36:05 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.137 ms - 4414[0m
+
+2022-11-11 19:36:35 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:36:35 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.889 ms - 4414[0m
+
+2022-11-11 19:38:56 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:38:56 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.120 ms - 4414[0m
+
+2022-11-11 19:41:42 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:41:42 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.703 ms - 4414[0m
+
+2022-11-11 19:44:05 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:44:05 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.519 ms - 4414[0m
+
+2022-11-11 19:46:55 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:46:55 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.753 ms - 4414[0m
+
+2022-11-11 19:47:02 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:47:02 [Winston Log] info: [0mGET /unit/title [32m201[0m 22.023 ms - 4414[0m
+
+2022-11-11 19:48:49 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:48:49 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.170 ms - 4414[0m
+
+2022-11-11 19:50:25 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:50:25 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.274 ms - 4414[0m
+
+2022-11-11 19:50:48 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:50:48 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.630 ms - 4414[0m
+
+2022-11-11 19:51:25 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:51:25 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.812 ms - 4414[0m
+
+2022-11-11 19:53:05 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:53:05 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.203 ms - 4414[0m
+
+2022-11-11 19:53:33 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 19:53:33 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.744 ms - 4414[0m
+
+2022-11-11 20:04:22 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:04:22 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.715 ms - 4414[0m
+
+2022-11-11 20:05:13 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:05:13 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.308 ms - 4414[0m
+
+2022-11-11 20:17:40 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:17:40 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.655 ms - 4414[0m
+
+2022-11-11 20:18:08 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:18:08 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.479 ms - 4414[0m
+
+2022-11-11 20:18:20 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:18:20 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.277 ms - 4414[0m
+
+2022-11-11 20:18:34 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:18:34 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.548 ms - 4414[0m
+
+2022-11-11 20:23:53 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:23:53 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.641 ms - 4414[0m
+
+2022-11-11 20:32:29 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:32:29 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.313 ms - 4414[0m
+
+2022-11-11 20:54:04 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:54:04 [Winston Log] info: [0mGET /unit/title [32m201[0m 24.096 ms - 4414[0m
+
+2022-11-11 20:54:13 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:54:13 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.343 ms - 4414[0m
+
+2022-11-11 20:55:33 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:55:33 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.151 ms - 4414[0m
+
+2022-11-11 20:55:34 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:55:34 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.505 ms - 4414[0m
+
+2022-11-11 20:55:37 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:55:37 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.451 ms - 4414[0m
+
+2022-11-11 20:55:41 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 20:55:41 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.622 ms - 4414[0m
+
+2022-11-11 21:29:38 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:29:38 [Winston Log] info: [0mGET /unit/title [32m201[0m 19.894 ms - 4414[0m
+
+2022-11-11 21:34:10 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:34:10 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.175 ms - 4414[0m
+
+2022-11-11 21:34:29 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:34:29 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.306 ms - 4414[0m
+
+2022-11-11 21:34:50 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:34:50 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.089 ms - 4414[0m
+
+2022-11-11 21:35:39 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:35:39 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.910 ms - 4414[0m
+
+2022-11-11 21:35:47 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:35:47 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.935 ms - 4414[0m
+
+2022-11-11 21:35:57 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:35:57 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.647 ms - 4414[0m
+
+2022-11-11 21:35:59 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:35:59 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.992 ms - 4414[0m
+
+2022-11-11 21:36:00 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:00 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.187 ms - 4414[0m
+
+2022-11-11 21:36:01 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:01 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.108 ms - 4414[0m
+
+2022-11-11 21:36:02 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:02 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.374 ms - 4414[0m
+
+2022-11-11 21:36:05 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:05 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.348 ms - 4414[0m
+
+2022-11-11 21:36:07 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:07 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.020 ms - 4414[0m
+
+2022-11-11 21:36:09 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:09 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.218 ms - 4414[0m
+
+2022-11-11 21:36:12 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:12 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.306 ms - 4414[0m
+
+2022-11-11 21:36:14 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:14 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.359 ms - 4414[0m
+
+2022-11-11 21:36:17 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:36:17 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.520 ms - 4414[0m
+
+2022-11-11 21:37:01 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:37:01 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.419 ms - 4414[0m
+
+2022-11-11 21:37:05 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:37:05 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.844 ms - 4414[0m
+
+2022-11-11 21:37:09 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:37:09 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.534 ms - 4414[0m
+
+2022-11-11 21:37:13 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:37:13 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.410 ms - 4414[0m
+
+2022-11-11 21:37:15 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:37:15 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.031 ms - 4414[0m
+
+2022-11-11 21:40:00 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:00 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.375 ms - 4414[0m
+
+2022-11-11 21:40:04 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:04 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.041 ms - 4414[0m
+
+2022-11-11 21:40:12 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:12 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.554 ms - 4414[0m
+
+2022-11-11 21:40:16 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:16 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.247 ms - 4414[0m
+
+2022-11-11 21:40:19 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:19 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.528 ms - 4414[0m
+
+2022-11-11 21:40:54 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:54 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.911 ms - 4414[0m
+
+2022-11-11 21:40:56 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:40:56 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.291 ms - 4414[0m
+
+2022-11-11 21:41:02 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:41:02 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.309 ms - 4414[0m
+
+2022-11-11 21:45:15 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:15 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.299 ms - 4414[0m
+
+2022-11-11 21:45:20 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:20 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.565 ms - 4414[0m
+
+2022-11-11 21:45:24 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:24 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.382 ms - 4414[0m
+
+2022-11-11 21:45:29 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:29 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.927 ms - 4414[0m
+
+2022-11-11 21:45:44 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:44 [Winston Log] info: [0mGET /unit/title [32m201[0m 19.995 ms - 4414[0m
+
+2022-11-11 21:45:49 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:49 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.112 ms - 4414[0m
+
+2022-11-11 21:45:51 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:45:51 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.909 ms - 4414[0m
+
+2022-11-11 21:46:46 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:46:46 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.392 ms - 4414[0m
+
+2022-11-11 21:47:11 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:11 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.035 ms - 4414[0m
+
+2022-11-11 21:47:14 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:14 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.857 ms - 4414[0m
+
+2022-11-11 21:47:15 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:15 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.943 ms - 4414[0m
+
+2022-11-11 21:47:16 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:16 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.813 ms - 4414[0m
+
+2022-11-11 21:47:18 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:18 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.329 ms - 4414[0m
+
+2022-11-11 21:47:19 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:19 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.502 ms - 4414[0m
+
+2022-11-11 21:47:21 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:21 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.024 ms - 4414[0m
+
+2022-11-11 21:47:31 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:31 [Winston Log] info: [0mGET /unit/title [32m201[0m 18.107 ms - 4414[0m
+
+2022-11-11 21:47:33 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:33 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.874 ms - 4414[0m
+
+2022-11-11 21:47:34 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:34 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.858 ms - 4414[0m
+
+2022-11-11 21:47:36 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:36 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.929 ms - 4414[0m
+
+2022-11-11 21:47:38 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:38 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.285 ms - 4414[0m
+
+2022-11-11 21:47:40 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:40 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.844 ms - 4414[0m
+
+2022-11-11 21:47:48 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:48 [Winston Log] info: [0mGET /unit/title [32m201[0m 20.485 ms - 4414[0m
+
+2022-11-11 21:47:54 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:54 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.643 ms - 4414[0m
+
+2022-11-11 21:47:56 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:56 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.995 ms - 4414[0m
+
+2022-11-11 21:47:58 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:47:58 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.236 ms - 4414[0m
+
+2022-11-11 21:48:07 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:07 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.140 ms - 4414[0m
+
+2022-11-11 21:48:10 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:10 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.906 ms - 4414[0m
+
+2022-11-11 21:48:12 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:12 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.841 ms - 4414[0m
+
+2022-11-11 21:48:14 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:14 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.496 ms - 4414[0m
+
+2022-11-11 21:48:31 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:31 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.909 ms - 4414[0m
+
+2022-11-11 21:48:33 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:33 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.611 ms - 4414[0m
+
+2022-11-11 21:48:39 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:39 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.064 ms - 4414[0m
+
+2022-11-11 21:48:44 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:44 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.457 ms - 4414[0m
+
+2022-11-11 21:48:45 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:45 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.678 ms - 4414[0m
+
+2022-11-11 21:48:47 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:47 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.865 ms - 4414[0m
+
+2022-11-11 21:48:48 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:48 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.529 ms - 4414[0m
+
+2022-11-11 21:48:55 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:55 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.015 ms - 4414[0m
+
+2022-11-11 21:48:58 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:48:58 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.096 ms - 4414[0m
+
+2022-11-11 21:49:14 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:49:14 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.492 ms - 4414[0m
+
+2022-11-11 21:49:57 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:49:57 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.729 ms - 4414[0m
+
+2022-11-11 21:50:18 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:50:18 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.138 ms - 4414[0m
+
+2022-11-11 21:51:22 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:51:22 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.222 ms - 4414[0m
+
+2022-11-11 21:51:24 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:51:24 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.315 ms - 4414[0m
+
+2022-11-11 21:53:48 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:53:48 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.595 ms - 4414[0m
+
+2022-11-11 21:53:49 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:53:49 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.845 ms - 4414[0m
+
+2022-11-11 21:54:05 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:54:05 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.513 ms - 4414[0m
+
+2022-11-11 21:56:44 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:56:44 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.195 ms - 4414[0m
+
+2022-11-11 21:56:51 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:56:51 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.347 ms - 4414[0m
+
+2022-11-11 21:56:56 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:56:56 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.325 ms - 4414[0m
+
+2022-11-11 21:56:59 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:56:59 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.149 ms - 4414[0m
+
+2022-11-11 21:57:02 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:57:02 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.131 ms - 4414[0m
+
+2022-11-11 21:57:13 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:57:13 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.421 ms - 4414[0m
+
+2022-11-11 21:57:17 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:57:17 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.483 ms - 4414[0m
+
+2022-11-11 21:57:20 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:57:20 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.066 ms - 4414[0m
+
+2022-11-11 21:57:22 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:57:22 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.616 ms - 4414[0m
+
+2022-11-11 21:57:25 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:57:25 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.487 ms - 4414[0m
+
+2022-11-11 21:58:08 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:58:08 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.298 ms - 4414[0m
+
+2022-11-11 21:58:17 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:58:17 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.587 ms - 4414[0m
+
+2022-11-11 21:58:23 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:58:23 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.808 ms - 4414[0m
+
+2022-11-11 21:58:27 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:58:27 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.353 ms - 4414[0m
+
+2022-11-11 21:58:30 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:58:30 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.449 ms - 4414[0m
+
+2022-11-11 21:58:33 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:58:33 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.012 ms - 4414[0m
+
+2022-11-11 21:59:50 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 21:59:50 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.550 ms - 4414[0m
+
+2022-11-11 22:00:03 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:00:03 [Winston Log] info: [0mGET /unit/title [32m201[0m 22.355 ms - 4414[0m
+
+2022-11-11 22:06:53 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:06:53 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.362 ms - 4414[0m
+
+2022-11-11 22:08:27 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-11 22:08:27 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-11 22:09:59 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:09:59 [Winston Log] info: [0mGET /unit/title [32m201[0m 23.796 ms - 4414[0m
+
+2022-11-11 22:10:16 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:10:16 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.898 ms - 4414[0m
+
+2022-11-11 22:11:45 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:11:45 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.103 ms - 4414[0m
+
+2022-11-11 22:14:54 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:14:54 [Winston Log] info: [0mGET /unit/title [32m201[0m 16.419 ms - 4414[0m
+
+2022-11-11 22:15:00 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:15:00 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.161 ms - 4414[0m
+
+2022-11-11 22:15:35 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:15:35 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.675 ms - 4414[0m
+
+2022-11-11 22:19:12 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:19:12 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.131 ms - 4414[0m
+
+2022-11-11 22:19:48 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:19:48 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.526 ms - 4414[0m
+
+2022-11-11 22:19:52 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:19:52 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.169 ms - 4414[0m
+
+2022-11-11 22:19:53 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:19:53 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.757 ms - 4414[0m
+
+2022-11-11 22:19:58 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:19:58 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.175 ms - 4414[0m
+
+2022-11-11 22:20:10 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:20:10 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.247 ms - 4414[0m
+
+2022-11-11 22:29:01 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:29:01 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.354 ms - 4414[0m
+
+2022-11-11 22:29:11 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:29:11 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.580 ms - 4414[0m
+
+2022-11-11 22:29:52 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:29:52 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.375 ms - 4414[0m
+
+2022-11-11 22:30:07 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:30:07 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.602 ms - 4414[0m
+
+2022-11-11 22:32:27 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:32:27 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.866 ms - 4414[0m
+
+2022-11-11 22:33:57 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:33:57 [Winston Log] info: [0mGET /unit/title [32m201[0m 14.751 ms - 4414[0m
+
+2022-11-11 22:36:38 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:36:38 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.419 ms - 4414[0m
+
+2022-11-11 22:36:51 [Winston Log] info: success :  단원 조회 성공
+2022-11-11 22:36:51 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.916 ms - 4414[0m
+
