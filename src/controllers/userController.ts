@@ -56,9 +56,10 @@ const getUsers = async (req: Request, res: Response): Promise<void> => {
 const login = async (req: Request, res: Response): Promise<void> => {    
     const userCreateDto: userCreateDto = req.body;
     try {
+        
         const data = await userService.login(userCreateDto);
         res.cookie(REFRESHTOKEN, data?.refreshToken, refreshTokenCookieOptions);
-        res.cookie(ACCESSTOKEN, data?.accessToken, accessTokenCookieOptions);
+        res.cookie(ACCESSTOKEN, data?.accessToken, accessTokenCookieOptions);                
         if(data) {
             res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.LOGIN_SUCCESS, data));
         }else{
