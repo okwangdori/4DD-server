@@ -10,8 +10,8 @@ interface ITokenOption {
 }
 
 const getExp = (tokenType: TokenType): number => {
-  const ACCESS_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 60 * 30; // 30분
-  const REFRESH_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 7; // 7일
+  const ACCESS_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 3; // 30분  // 60 * 30;
+  const REFRESH_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 5; // 7일  // 60 * 60 * 24 * 7;
   return tokenType === 'access' ? ACCESS_TOKEN_EXPIRE_DATE : REFRESH_TOKEN_EXPIRE_DATE;
 };
 
@@ -29,6 +29,8 @@ const createToken = (tokenType: TokenType, option: ITokenOption): string => {
 };
 
 const decodeToken = (tokenType: TokenType, token: string): Promise<JwtPayload> => {
+  // logger.info("##### decodeToken : "+tokenType);
+  // logger.info("##### token : "+token);
   return new Promise(resolve => {
     const secret = getSecret(tokenType);
     jwt.verify(token, secret, (err: VerifyErrors | null, decoded: any) => {
@@ -48,12 +50,26 @@ const decodeToken = (tokenType: TokenType, token: string): Promise<JwtPayload> =
   });
 };
 
-const getAccessToken = (authorization: string | undefined): string | undefined => {
-  return authorization?.split('Bearer ')[1];
+// const getAccessToken = (authorization: string | undefined): string | undefined => {
+//   return authorization?.split('Bearer ')[1];
+// };
+
+// const getRefreshToken = (cookies: { refreshtoken: string | undefined }): string | undefined => {
+//   return cookies?.refreshtoken;
+// };
+
+const getToken = (cookies: string | undefined, tokenType: string): string | undefined => {
+  let token = '';
+  cookies?.split(';').map((item: any) => {
+    const cookieItem = item.trim();
+    if(tokenType === 'accesstoken' && item.match('accesstoken')){
+      token = cookieItem.split('=')[1];
+    }
+    if(tokenType === 'refreshtoken' && item.match('refreshtoken')){
+      token = cookieItem.split('=')[1];
+    }
+  })
+  return token;
 };
 
-const getRefreshToken = (cookies: { refreshtoken: string | undefined }): string | undefined => {
-  return cookies?.refreshtoken;
-};
-
-export { createToken, decodeToken, getAccessToken, getRefreshToken };
+export { createToken, decodeToken, getToken };
