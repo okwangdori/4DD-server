@@ -2,20 +2,25 @@ import { userBaseResponseDto } from "../interfaces/common/userBaseResponseDto";
 import { userCreateDto } from "../interfaces/user/userCreateDto";
 import { userResponseDto } from "../interfaces/user/userResponseDto";
 import { userUpdateDto } from "../interfaces/user/userUpdateDto";
+import { userInfoDto } from "../interfaces/user/userInfoDto";
 import User from "../models/user";
+import { createToken } from "../utills/jwt.utill";
+import logger from "../log/logger";
 
-
-
-const createUser = async (userCreateDto: userCreateDto): Promise<userBaseResponseDto> => {
+interface userData {
+    id: string;
+    name?: string;
+    email?: string;
+    accessToken: string;
+    refreshToken: string;
+}
+const signup = async (userCreateDto: userCreateDto): Promise<userBaseResponseDto> => {
     try {
     	// create를 위해 각 filed명에 값들을 할당시켜준다.
         const user = new User({
-            title: userCreateDto.title,
-            content: userCreateDto.content,
-            additional: {
-                category: userCreateDto.additional?.category,
-                season: userCreateDto.additional?.season,
-            }
+            name: userCreateDto.name,
+            email: userCreateDto.email,
+            password: userCreateDto.password
         });
         await user.save();
 
@@ -60,6 +65,46 @@ const findUserById = async (userId: string): Promise<userResponseDto | null> => 
     }
 }
 
+const getUsers = async (): Promise<any> => {
+    try {
+        const users = await User.find();
+        if (!users) {
+            return null;
+        }
+        return users;
+        
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+const login = async (userCreateDto: userCreateDto): Promise<userResponseDto | null> => {        
+    try {
+        const user = await User.findOne({email: userCreateDto.email});     
+        // 계정, 비밀번호 체크
+        if (!user || user.password !== userCreateDto.password) {
+            return null;
+        }
+        const tokenOption = {
+            id: user._id,
+            email: user.email
+        };       
+        const userData: userData = {
+            id: user._id,
+            name: user.name,
+            email: user.email,
+            accessToken: createToken('access', tokenOption),
+            refreshToken: createToken('refresh', tokenOption)
+        }
+        return userData;
+        
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
 const deleteUser = async (userId: string): Promise<userResponseDto | null> => {
     try {
         const user = await User.findByIdAndDelete(userId);
@@ -74,8 +119,10 @@ const deleteUser = async (userId: string): Promise<userResponseDto | null> => {
 }
 
 export default {
-    createUser,
+    signup,
     updateUser,
     findUserById,
+    getUsers,
+    login,
     deleteUser,
 }

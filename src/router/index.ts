@@ -2,6 +2,7 @@ import { Router } from 'express';
 import postRouter from "./postRouter";
 import userRouter from "./userRouter";
 import unitRouter from "./unitRouter";
+import jwtMiddleware from "../middlewares/jwtMiddleware";
 
 const router: Router = Router();
 
@@ -12,6 +13,6 @@ router.use('/post', postRouter);
 router.use('/unit/title', unitRouter);
 
 //사용자 api
-router.use('/user', userRouter);
+router.use('/user', jwtMiddleware, userRouter);
 
 export default router;

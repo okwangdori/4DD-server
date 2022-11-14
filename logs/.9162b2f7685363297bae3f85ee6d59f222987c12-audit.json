@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 2
+    },
+    "auditLog": "C:\\Workspace\\4DD-server\\logs\\.9162b2f7685363297bae3f85ee6d59f222987c12-audit.json",
+    "files": [
+        {
+            "date": 1667747498499,
+            "name": "C:\\Workspace\\4DD-server\\logs\\2022-11-07.log",
+            "hash": "c9222ba229af0572c529c1b95366531c3d04f07a563f6f6d196589e64ef552c0"
+        },
+        {
+            "date": 1667833393006,
+            "name": "C:\\Workspace\\4DD-server\\logs\\2022-11-08.log",
+            "hash": "c13312825c71b799c6f31bedaca5574314d9a9386d14a94ab717a30285ce9223"
+        }
+    ],
+    "hashType": "sha256"
+}

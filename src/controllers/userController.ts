@@ -5,13 +5,14 @@ import statusCode from "../modules/statusCode";
 import message from "../modules/responseMessage";
 import util from "../modules/util";
 import { userService } from "../services";
+import { ACCESSTOKEN, REFRESHTOKEN, accessTokenCookieOptions, refreshTokenCookieOptions } from '../constants';
+import logger from "../log/logger";
 
 
-const createUser = async (req: Request, res: Response): Promise<void> => {
-    const userCreateDto: userCreateDto = req.body;
-    
+const signup = async (req: Request, res: Response): Promise<void> => {
+    const userCreateDto: userCreateDto = req.body;    
     try {
-        const data = await userService.createUser(userCreateDto);
+        const data = await userService.signup(userCreateDto);
         res.status(statusCode.CREATED).send(util.success(statusCode.CREATED, message.CREATE_USER_SUCCESS, data));
     } catch (error) {
         res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
@@ -41,6 +42,43 @@ const findUserById = async (req: Request, res: Response): Promise<void> => {
     }
 }
 
+const getUsers = async (req: Request, res: Response): Promise<void> => {
+
+    try {
+        const data = await userService.getUsers();
+        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.READ_USER_SUCCESS, data));
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
+
+const login = async (req: Request, res: Response): Promise<void> => {    
+    const userCreateDto: userCreateDto = req.body;
+    try {
+        const data = await userService.login(userCreateDto);
+        res.cookie(REFRESHTOKEN, data?.refreshToken, refreshTokenCookieOptions);
+        res.cookie(ACCESSTOKEN, data?.accessToken, accessTokenCookieOptions);
+        if(data) {
+            res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.LOGIN_SUCCESS, data));
+        }else{
+            res.status(statusCode.NOT_FOUND).send(util.fail(statusCode.NOT_FOUND, message.INVALID_EMAIL_OR_PASSWORD));    
+        }
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
+const logout = async (req: Request, res: Response): Promise<void> => {    
+    try {
+        res.cookie(REFRESHTOKEN, '');
+        res.cookie(ACCESSTOKEN, '');
+        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.LOGOUT_SUCCESS));
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
 const deleteUser = async (req: Request, res: Response): Promise<void> => {
     const { userId } = req.params;
 
@@ -53,8 +91,11 @@ const deleteUser = async (req: Request, res: Response): Promise<void> => {
 }
 
 export default {
-    createUser,
+    signup,
     updateUser,
     findUserById,
+    getUsers,
+    login,
+    logout,
     deleteUser,
 }

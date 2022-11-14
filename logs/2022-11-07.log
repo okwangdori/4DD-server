@@ -1,0 +1,460 @@
+2022-11-07 00:11:40 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:11:40 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:11:52 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:11:52 [Winston Log] info: [0mPOST /user/login [32m201[0m 24.113 ms - 600[0m
+
+2022-11-07 00:12:04 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:12:04 [Winston Log] info: [0mGET /user/info [32m201[0m 14.799 ms - 77[0m
+
+2022-11-07 00:17:06 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:17:07 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:22:19 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:22:19 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:23:02 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:23:02 [Winston Log] info: [0mPOST /user/login [32m201[0m 25.227 ms - 600[0m
+
+2022-11-07 00:23:03 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:23:03 [Winston Log] info: [0mGET /user/info [32m201[0m 12.140 ms - 77[0m
+
+2022-11-07 00:24:01 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:24:01 [Winston Log] info: [0mGET /user/info [32m201[0m 10.835 ms - 77[0m
+
+2022-11-07 00:33:18 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:33:19 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:33:25 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:33:25 [Winston Log] info: [0mPOST /user/login [32m201[0m 25.287 ms - 600[0m
+
+2022-11-07 00:33:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:33:29 [Winston Log] info: [0mGET /user/info [32m201[0m 12.355 ms - 77[0m
+
+2022-11-07 00:37:40 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:37:41 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:37:49 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:37:49 [Winston Log] info: [0mPOST /user/login [32m201[0m 24.527 ms - 600[0m
+
+2022-11-07 00:37:51 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:37:51 [Winston Log] info: [0mGET /user/info [32m201[0m 12.979 ms - 77[0m
+
+2022-11-07 00:38:06 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:38:06 [Winston Log] info: [0mGET /user/info [32m201[0m 10.269 ms - 77[0m
+
+2022-11-07 00:39:00 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:39:00 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:39:06 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:39:06 [Winston Log] info: [0mPOST /user/login [32m201[0m 24.335 ms - 600[0m
+
+2022-11-07 00:39:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:39:07 [Winston Log] info: [0mGET /user/info [32m201[0m 10.978 ms - 77[0m
+
+2022-11-07 00:40:20 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:40:21 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:40:27 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:40:27 [Winston Log] info: [0mPOST /user/login [32m201[0m 24.183 ms - 600[0m
+
+2022-11-07 00:40:29 [Winston Log] info: @@@@@@@@@@@@@ getUsers Controller 
+2022-11-07 00:40:29 [Winston Log] info: #################### getUsers Service
+2022-11-07 00:40:29 [Winston Log] info: #################### users !!!  {
+  _id: new ObjectId("63610350375390542917eba5"),
+  name: 'jiwoh',
+  email: 'lu521ck@naver.com',
+  password: 'sdf321sdf!',
+  __v: 0
+},{
+  _id: new ObjectId("636271ebf50168133ab9a091"),
+  name: '오징어',
+  email: 'weoij@naver.com',
+  password: 'sdf321sdf!',
+  __v: 0
+},{
+  _id: new ObjectId("6362792fa4b445d3f631a9fb"),
+  name: '가야야',
+  email: 'oooo@naver.com',
+  password: 'sdf321sdf!',
+  __v: 0
+}
+2022-11-07 00:40:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:40:29 [Winston Log] info: [0mGET /user/info [32m201[0m 23.858 ms - 407[0m
+
+2022-11-07 00:41:29 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:41:29 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:41:30 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:41:30 [Winston Log] info: [0mGET /user/info [32m201[0m 25.451 ms - 407[0m
+
+2022-11-07 00:41:39 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:41:39 [Winston Log] info: [0mPOST /user/login [32m201[0m 15.602 ms - 600[0m
+
+2022-11-07 00:41:44 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:41:44 [Winston Log] info: [0mGET /user/info [32m201[0m 12.162 ms - 407[0m
+
+2022-11-07 00:56:32 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:56:33 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:56:54 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:56:54 [Winston Log] info: [0mPOST /user/login [32m201[0m 24.376 ms - 600[0m
+
+2022-11-07 00:56:57 [Winston Log] info: ########### userInfoDto : {
+  _id: new ObjectId("63610350375390542917eba5"),
+  name: 'jiwoh',
+  email: 'lu521ck@naver.com',
+  password: 'sdf321sdf!',
+  __v: 0
+},{
+  _id: new ObjectId("636271ebf50168133ab9a091"),
+  name: '오징어',
+  email: 'weoij@naver.com',
+  password: 'sdf321sdf!',
+  __v: 0
+},{
+  _id: new ObjectId("6362792fa4b445d3f631a9fb"),
+  name: '가야야',
+  email: 'oooo@naver.com',
+  password: 'sdf321sdf!',
+  __v: 0
+}
+2022-11-07 00:56:57 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:56:57 [Winston Log] info: [0mGET /user/info [32m201[0m 19.063 ms - 407[0m
+
+2022-11-07 00:58:22 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 00:58:22 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 00:58:23 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 00:58:23 [Winston Log] info: [0mGET /user/info [32m201[0m 23.837 ms - 407[0m
+
+2022-11-07 20:39:34 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 20:39:34 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 20:45:49 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 20:45:49 [Winston Log] info: [0mPOST /user/login [32m201[0m 30.792 ms - 600[0m
+
+2022-11-07 20:55:53 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 20:55:54 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 20:57:09 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 20:57:10 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 20:57:29 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 20:57:29 [Winston Log] info: [0mPOST /user/login [32m201[0m 26.817 ms - 600[0m
+
+2022-11-07 20:57:57 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 20:57:57 [Winston Log] info: [0mGET /user/info [32m201[0m 13.344 ms - 407[0m
+
+2022-11-07 20:58:20 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 20:58:20 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 20:59:05 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 20:59:06 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 20:59:07 [Winston Log] info: @!@@@#@#@#@# test
+2022-11-07 20:59:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 20:59:08 [Winston Log] info: [0mGET /user/info [32m201[0m 28.095 ms - 407[0m
+
+2022-11-07 21:07:08 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 21:07:08 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 21:13:17 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 21:13:17 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 21:16:07 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 21:16:07 [Winston Log] info: [0mPOST /user/login [32m201[0m 25.984 ms - 600[0m
+
+2022-11-07 21:16:08 [Winston Log] info: @!@@@#@#@#@# test
+2022-11-07 21:16:08 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 21:16:08 [Winston Log] info: [0mGET /user/info [32m201[0m 16.238 ms - 407[0m
+
+2022-11-07 21:50:03 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 21:50:03 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:03:53 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:03:54 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:45:03 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:45:03 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:45:32 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 22:45:32 [Winston Log] info: [0mPOST /user/login [32m201[0m 24.727 ms - 600[0m
+
+2022-11-07 22:45:34 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 22:45:34 [Winston Log] info: [0mGET /user/info [32m201[0m 13.840 ms - 407[0m
+
+2022-11-07 22:48:24 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:48:25 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:48:51 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:48:51 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:48:55 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 22:48:55 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 22:48:55 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 22:48:55 [Winston Log] info: [0mGET /user/info [32m201[0m 26.870 ms - 407[0m
+
+2022-11-07 22:49:22 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:49:22 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:49:24 [Winston Log] info: @@@@@@ req : [object Object]
+2022-11-07 22:49:24 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 22:49:24 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 22:49:24 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 22:49:24 [Winston Log] info: [0mGET /user/info [32m201[0m 26.263 ms - 407[0m
+
+2022-11-07 22:49:34 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:49:34 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:49:55 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:49:56 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:59:49 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 22:59:49 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 22:59:55 [Winston Log] info: @@@@@@ req : {"cookie":"refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzM1MzIsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyODczMn0.syC6vV09JyaAT-fwxzlgH5yFePtqpic2ZBsUnfHuS4c; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzM1MzIsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyODczMn0.syC6vV09JyaAT-fwxzlgH5yFePtqpic2ZBsUnfHuS4c","accept-language":"ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7","accept-encoding":"gzip, deflate, br","referer":"http://localhost:5173/","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:5173","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36","sec-ch-ua-mobile":"?0","content-type":"application/json","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"","content-length":"53","connection":"close","host":"localhost:8080"}
+2022-11-07 22:59:55 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 22:59:55 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 22:59:55 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 22:59:55 [Winston Log] info: [0mPOST /user/login [32m201[0m 31.627 ms - 600[0m
+
+2022-11-07 23:00:56 [Winston Log] info: @@@@@@ req : {"cookie":"refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA","accept-language":"ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7","accept-encoding":"gzip, deflate, br","referer":"http://localhost:5173/","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36","x-access-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4MjUxNjcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyMzM2N30.Mk9inG1puzGdCg7F_4viC_5BYjHiMh29euJIIKYaYaA","sec-ch-ua-mobile":"?0","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"","connection":"close","host":"localhost:8080"}
+2022-11-07 23:00:56 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:00:56 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:00:56 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:00:56 [Winston Log] info: [0mGET /user/info [32m201[0m 21.217 ms - 407[0m
+
+2022-11-07 23:02:12 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:02:12 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:02:15 [Winston Log] info: @@@@@@ req : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4MjUxNjcsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyMzM2N30.Mk9inG1puzGdCg7F_4viC_5BYjHiMh29euJIIKYaYaA"
+2022-11-07 23:02:15 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:02:15 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:02:15 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:02:15 [Winston Log] info: [0mGET /user/info [32m201[0m 29.184 ms - 407[0m
+
+2022-11-07 23:05:05 [Winston Log] info: @@@@@@ req : undefined
+2022-11-07 23:05:05 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:05:05 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:05:05 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:05:05 [Winston Log] info: [0mGET /user/info [32m201[0m 15.431 ms - 407[0m
+
+2022-11-07 23:05:37 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:05:37 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:05:39 [Winston Log] info: @@@@@@ req : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4MzEzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.hQkPjeMfCIahUndFL-v1BmSWV_Qx5MoLTzoi5captlw"
+2022-11-07 23:05:39 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:05:39 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:05:39 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:05:39 [Winston Log] info: [0mGET /user/info [32m201[0m 32.837 ms - 407[0m
+
+2022-11-07 23:07:00 [Winston Log] info: @@@@@@ req : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4MzEzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.hQkPjeMfCIahUndFL-v1BmSWV_Qx5MoLTzoi5captlw"
+2022-11-07 23:07:00 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:07:00 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:07:00 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:07:00 [Winston Log] info: [0mGET /user/info [32m201[0m 16.600 ms - 407[0m
+
+2022-11-07 23:14:23 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:14:24 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:14:26 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-07 23:14:26 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:14:26 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:14:26 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:14:26 [Winston Log] info: [0mGET /user/info [32m201[0m 28.022 ms - 407[0m
+
+2022-11-07 23:14:52 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:14:53 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:14:58 [Winston Log] info: @@@@@@ cookie : undefined
+2022-11-07 23:14:58 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:14:58 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:14:58 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:14:58 [Winston Log] info: [0mGET /user/info [32m201[0m 25.061 ms - 407[0m
+
+2022-11-07 23:15:32 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:15:33 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:15:41 [Winston Log] info: @@@@@@ cookie : {"cookie":"refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA","accept-language":"ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7","accept-encoding":"gzip, deflate, br","referer":"http://localhost:5173/","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc4MzEzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.hQkPjeMfCIahUndFL-v1BmSWV_Qx5MoLTzoi5captlw","sec-ch-ua-mobile":"?0","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"","connection":"close","host":"localhost:8080"}
+2022-11-07 23:15:41 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:15:41 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:15:41 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:15:41 [Winston Log] info: [0mGET /user/info [32m201[0m 45.565 ms - 407[0m
+
+2022-11-07 23:16:33 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:16:33 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:16:35 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA"
+2022-11-07 23:16:35 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:16:35 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:16:35 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:16:35 [Winston Log] info: [0mGET /user/info [32m201[0m 30.937 ms - 407[0m
+
+2022-11-07 23:23:30 [Winston Log] info: @@@@@@ cookie : "refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA"
+2022-11-07 23:23:30 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:23:30 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:23:30 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:23:30 [Winston Log] info: [0mPOST /user/login [32m201[0m 19.532 ms - 600[0m
+
+2022-11-07 23:23:32 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzU4MTAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTAxMH0.eDRUBoYN2LMSg_op2e4np9mlAKDDEHg26vy-azTknJo"
+2022-11-07 23:23:32 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:23:32 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:23:32 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:23:32 [Winston Log] info: [0mGET /user/info [32m201[0m 14.625 ms - 407[0m
+
+2022-11-07 23:28:20 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:28:21 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:29:00 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzU4MTAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTAxMH0.eDRUBoYN2LMSg_op2e4np9mlAKDDEHg26vy-azTknJo"
+2022-11-07 23:29:00 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:29:00 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:29:00 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:29:00 [Winston Log] info: [0mGET /user/info [32m201[0m 35.826 ms - 407[0m
+
+2022-11-07 23:29:16 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzU4MTAsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTAxMH0.eDRUBoYN2LMSg_op2e4np9mlAKDDEHg26vy-azTknJo"
+2022-11-07 23:29:16 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:29:16 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:29:16 [Winston Log] info: $$$$$$$$$$$$ REFRESHTOKEN: refreshtoken
+2022-11-07 23:29:16 [Winston Log] info: $$$$$$$$$$$$ data re: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzYxNTYsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTM1Nn0.8qT0NzqpVkL3eR19giVq5FT4dl9qK2AqiwBpJtnP9Tw
+2022-11-07 23:29:16 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:29:16 [Winston Log] info: [0mPOST /user/login [32m201[0m 19.762 ms - 600[0m
+
+2022-11-07 23:33:16 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:33:17 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:33:24 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzYxNTYsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTM1Nn0.8qT0NzqpVkL3eR19giVq5FT4dl9qK2AqiwBpJtnP9Tw"
+2022-11-07 23:33:24 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:33:24 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:33:24 [Winston Log] info: $$$$$$$$$$$$ REFRESHTOKEN: refreshtoken
+2022-11-07 23:33:24 [Winston Log] info: $$$$$$$$$$$$ data re: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM
+2022-11-07 23:33:24 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:33:24 [Winston Log] info: [0mPOST /user/login [32m201[0m 29.747 ms - 600[0m
+
+2022-11-07 23:34:13 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-07 23:34:13 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-07 23:34:21 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:34:21 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:34:21 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:34:21 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:34:21 [Winston Log] info: [0mPOST /user/login [32m201[0m 30.939 ms - 600[0m
+
+2022-11-07 23:36:40 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:36:40 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:36:40 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:36:40 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:36:40 [Winston Log] info: [0mPOST /user/login [32m201[0m 16.615 ms - 600[0m
+
+2022-11-07 23:37:23 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:37:23 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:37:23 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:37:23 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:37:23 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.678 ms - 600[0m
+
+2022-11-07 23:39:26 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:39:26 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:39:26 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:39:26 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:39:26 [Winston Log] info: [0mPOST /user/login [32m201[0m 12.575 ms - 600[0m
+
+2022-11-07 23:40:48 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:40:48 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:40:48 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:40:48 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:40:48 [Winston Log] info: [0mPOST /user/login [32m201[0m 12.109 ms - 600[0m
+
+2022-11-07 23:41:40 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:41:40 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:41:40 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:41:40 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:41:40 [Winston Log] info: [0mGET /user/info [32m201[0m 17.889 ms - 407[0m
+
+2022-11-07 23:49:21 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:49:21 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:49:21 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:49:21 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:49:21 [Winston Log] info: [0mGET /user/info [32m201[0m 14.473 ms - 407[0m
+
+2022-11-07 23:49:42 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:49:42 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:49:42 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:49:42 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:49:42 [Winston Log] info: [0mPOST /user/login [32m201[0m 10.649 ms - 600[0m
+
+2022-11-07 23:54:51 [Winston Log] info: @@@@@@ cookie : "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzQzOTUsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgyOTU5NX0.lJmdVKSF3fKJlvDDwNuJ-zEtcYQdHroHRkAENvPOdfA; refreshtoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg0MzY0MDQsImlkIjoiNjM2MTAzNTAzNzUzOTA1NDI5MTdlYmE1IiwiZW1haWwiOiJsdTUyMWNrQG5hdmVyLmNvbSIsImlhdCI6MTY2NzgzMTYwNH0.uPdTBvl36Y41Hs5lkdQKXC9FHXn071jG9wM0-4YHMRM"
+2022-11-07 23:54:51 [Winston Log] info: @@@@@@ accessToken : undefined
+2022-11-07 23:54:51 [Winston Log] info: @@@@@@ refreshToken : undefined
+2022-11-07 23:54:51 [Winston Log] info: success :  사용자 조회 성공
+2022-11-07 23:54:51 [Winston Log] info: [0mPOST /user/login [32m201[0m 13.840 ms - 600[0m
+
