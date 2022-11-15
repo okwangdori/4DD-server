@@ -10,8 +10,8 @@ interface ITokenOption {
 }
 
 const getExp = (tokenType: TokenType): number => {
-  const ACCESS_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 3; // 30분  // 60 * 30;
-  const REFRESH_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 5; // 7일  // 60 * 60 * 24 * 7;
+  const ACCESS_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 60 * 30; // 30분 : 60 * 30;   // 3초 : 3
+  const REFRESH_TOKEN_EXPIRE_DATE = Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 7; // 7일 : 60 * 60 * 24 * 7;  // 5초 : 5
   return tokenType === 'access' ? ACCESS_TOKEN_EXPIRE_DATE : REFRESH_TOKEN_EXPIRE_DATE;
 };
 
