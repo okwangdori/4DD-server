@@ -29,8 +29,6 @@ const createToken = (tokenType: TokenType, option: ITokenOption): string => {
 };
 
 const decodeToken = (tokenType: TokenType, token: string): Promise<JwtPayload> => {
-  // logger.info("##### decodeToken : "+tokenType);
-  // logger.info("##### token : "+token);
   return new Promise(resolve => {
     const secret = getSecret(tokenType);
     jwt.verify(token, secret, (err: VerifyErrors | null, decoded: any) => {

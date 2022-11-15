@@ -8,6 +8,8 @@
 
 # log
 /src/logs
+*.log
+/logs/*
 
 # production
 /build

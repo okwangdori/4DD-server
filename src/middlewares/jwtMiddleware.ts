@@ -10,8 +10,6 @@ const jwtMiddleware = async (req: Request, res: Response, next: NextFunction) =>
   const accessToken = getToken(req.headers.cookie, 'accesstoken');
   const refreshToken = getToken(req.headers.cookie, 'refreshtoken');
 
-  logger.info("@@@@@@@@@@@ get accessToken: "+ accessToken);
-  logger.info("@@@@@@@@@@@ get refreshToken: "+ refreshToken);
   if (!accessToken || !refreshToken) {
     return next();
   }
@@ -26,13 +24,11 @@ const jwtMiddleware = async (req: Request, res: Response, next: NextFunction) =>
 
   if (aError || rError) {
     if (aError === TOKENEXPIREDERROR && !rError) {
-      logger.info("######### ACCESS error !! ");
       const newAccessToken = createToken('access', { id: rId, email: rEmail });
       res.cookie(ACCESSTOKEN, newAccessToken, accessTokenCookieOptions);
     }
     if (rError === TOKENEXPIREDERROR) {
       // res.clearCookie(REFRESHTOKEN);
-      logger.info("######### REFRESH error !! ");
       res.cookie(REFRESHTOKEN, '');
       // return res.status(200).json({ expiredRefreshToken: true });
       return res.status(statusCode.FORBIDDEN).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.EXPIRED_REFRESH_TOKEN));
