@@ -60,40 +60,37 @@ const findUnitTitleById = async (unitTitleId: string): Promise<unitTitleResponse
 }
 
 const findUnitTitleAll = async () => {
-    // const unitTitle = await UnitTitle.find({}, function (err:any, data:any) {
-    //     if (!err) {
-    //         res.render("unitTitle", { "unitTitle": data });
-    //     } else {
-    //         throw err;
-    //     }
-    // }).clone().catch(function(err){ console.log(err)});
-
-    // return unitTitle;
-
-
-    // ctx.body = posts
-    // .map(post => post.toJSON())
-    // .map(post => ({
-    //   ...post,
-    //   body: removeHtmlAndShorten(post.body),
-    // }));
-
-
-
-
     try {
-        var unitTitle = await UnitTitle.find({});
-        var test;
+        let unitTitle = await UnitTitle.find().sort( { "additional.category_number": 1, "dateTimeOfUnitTitleCreating": -1 } );
+
+        //오브젝트용 가공 샘플
+        // interface ObjType {
+        //     [key: string]: any[]
+        // }
+        // let obj : ObjType = {};
+        let list : any[] = [];
+
         if (!unitTitle) {
             return null;
         }else{
-            test = unitTitle.map(
-                unitTitle => unitTitle.toJSON()).map(unitTitle => ({
-                    ...unitTitle
-                }));
+            unitTitle.map((e, i) => {
+                if(list[e.additional.category_number]) {
+                    list[e.additional.category_number].push(e);
+                }else{
+                    list[e.additional.category_number] = [];
+                    list[e.additional.category_number].push(e);
+                }
+                //오브젝트용 가공 샘플
+                // if(obj[e.additional.category]) {
+                //     obj[e.additional.category].push(e);
+                // }else{
+                //     obj[e.additional.category] = [];
+                //     obj[e.additional.category].push(e);
+                // }
+            });
         }
 
-        return test;
+        return list;
     } catch (error) {
         logger.error(error);
         throw error;

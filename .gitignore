@@ -7,7 +7,7 @@
 /src/test
 
 # log
-\src\logs
+/src/logs
 
 # production
 /build

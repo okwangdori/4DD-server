@@ -42,20 +42,11 @@ const findUnitTitleById = async (req: Request, res: Response): Promise<void> => 
     }
 }
 
-const findUnitTitleAll = async (res: Response): Promise<void> => {
+const findUnitTitleAll = async (req: Request, res: Response): Promise<void> => {
     try {
-        var test;
         const data = await unitTitleService.findUnitTitleAll();
-        // test = data.map(
-        //     data => unitTitle.toJSON()).map(data => ({
-        //         ...data
-        //     }));
-        logger.info("@@@@@@@@@@@@@@@@@@@@@@@ : ", data);
-        logger.info("@@@@@@@@@@@@@@@@@@resresresresres : ", res.status);
-
         res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));
     } catch (error) {
-        logger.error("errorrrrrrrrrrrrr : ", error);
         res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
     }
 }

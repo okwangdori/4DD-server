@@ -1,0 +1,35 @@
+2022-11-12 14:39:10 [Winston Log] info: 
+    ################ Server listening on port 8080 ################
+    
+2022-11-12 14:39:10 [Winston Log] info: Mongoose Connected ...
+        
+2022-11-12 14:41:58 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 14:41:58 [Winston Log] info: [0mGET /unit/title [32m201[0m 39.613 ms - 4414[0m
+
+2022-11-12 14:48:20 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 14:48:20 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.662 ms - 4414[0m
+
+2022-11-12 14:48:40 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 14:48:40 [Winston Log] info: [0mGET /unit/title [32m201[0m 11.875 ms - 4414[0m
+
+2022-11-12 14:48:41 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 14:48:41 [Winston Log] info: [0mGET /unit/title [32m201[0m 17.209 ms - 4414[0m
+
+2022-11-12 14:53:11 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 14:53:11 [Winston Log] info: [0mGET /unit/title [32m201[0m 19.835 ms - 4414[0m
+
+2022-11-12 14:53:13 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 14:53:13 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.898 ms - 4414[0m
+
+2022-11-12 15:20:59 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 15:20:59 [Winston Log] info: [0mGET /unit/title [32m201[0m 15.358 ms - 4414[0m
+
+2022-11-12 15:26:04 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 15:26:04 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.879 ms - 4414[0m
+
+2022-11-12 15:27:29 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 15:27:29 [Winston Log] info: [0mGET /unit/title [32m201[0m 13.566 ms - 4414[0m
+
+2022-11-12 15:30:03 [Winston Log] info: success :  단원 조회 성공
+2022-11-12 15:30:03 [Winston Log] info: [0mGET /unit/title [32m201[0m 12.344 ms - 4414[0m
+
