@@ -80,6 +80,16 @@ const logout = async (req: Request, res: Response): Promise<void> => {
     }
 }
 
+const changePassword = async (req: Request, res: Response): Promise<void> => {    
+    const userUpdateDto: userUpdateDto = req.body;    
+    try {
+        const data = await userService.changePassword(userUpdateDto);
+        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.CHANGE_PASSWORD_SUCCESS, data));
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
 const deleteUser = async (req: Request, res: Response): Promise<void> => {
     const { userId } = req.params;
 
@@ -98,5 +108,6 @@ export default {
     getUsers,
     login,
     logout,
+    changePassword,
     deleteUser,
 }

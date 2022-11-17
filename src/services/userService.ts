@@ -105,6 +105,21 @@ const login = async (userCreateDto: userCreateDto): Promise<userResponseDto | nu
     }
 }
 
+const changePassword = async (userUpdateDto: userUpdateDto): Promise<userResponseDto | null> => {
+    logger.info("########## id : "+ userUpdateDto._id);
+    logger.info("########## password : "+ userUpdateDto.password);
+    try {
+        const user = await User.findByIdAndUpdate(userUpdateDto._id, {password: userUpdateDto.password});
+        if (!user) {
+            return null;
+        }
+        return user;
+    } catch (error) {
+        console.log(error)
+        throw error;
+    }
+}
+
 const deleteUser = async (userId: string): Promise<userResponseDto | null> => {
     try {
         const user = await User.findByIdAndDelete(userId);
@@ -124,5 +139,6 @@ export default {
     findUserById,
     getUsers,
     login,
+    changePassword,
     deleteUser,
 }
