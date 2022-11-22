@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
-import { postInfo } from "../interfaces/post/postInfo";
+import { postInfoDto } from "../interfaces/post/postInfoDto";
 
 const PostSchema = new mongoose.Schema({
+    userName: {
+        type: String,
+        required: true
+    },
     title: {
         type: String,
         required: true
@@ -21,4 +25,4 @@ const PostSchema = new mongoose.Schema({
     },
 });
 
-export default mongoose.model<postInfo & mongoose.Document>("Post", PostSchema);
+export default mongoose.model<postInfoDto & mongoose.Document>("Post", PostSchema);

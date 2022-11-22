@@ -1,7 +1,9 @@
 import { postBaseResponseDto } from "../interfaces/common/postBaseResponseDto";
 import { postCreateDto } from "../interfaces/post/postCreateDto";
+import { postInfoDto } from "../interfaces/post/postInfoDto";
 import { postResponseDto } from "../interfaces/post/postResponseDto";
 import { postUpdateDto } from "../interfaces/post/postUpdateDto";
+import logger from "../log/logger";
 import Post from "../models/Post";
 
 
@@ -60,6 +62,21 @@ const findPostById = async (postId: string): Promise<postResponseDto | null> => 
     }
 }
 
+const getPosts = async (): Promise<any> => {
+    try {
+        const posts = await Post.find();
+        logger.info("######### posts : "+ posts);
+        if (!posts) {
+            return null;
+        }
+        return posts;
+        
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
 const deletePost = async (postId: string): Promise<postResponseDto | null> => {
     try {
         const post = await Post.findByIdAndDelete(postId);
@@ -77,5 +94,6 @@ export default {
     createPost,
     updatePost,
     findPostById,
+    getPosts,
     deletePost,
 }

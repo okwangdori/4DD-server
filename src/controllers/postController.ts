@@ -41,6 +41,16 @@ const findPostById = async (req: Request, res: Response): Promise<void> => {
     }
 }
 
+const getPosts = async (req: Request, res: Response): Promise<void> => {
+
+    try {
+        const data = await postService.getPosts();
+        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.READ_POST_SUCCESS, data));
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
 const deletePost = async (req: Request, res: Response): Promise<void> => {
     const { postId } = req.params;
 
@@ -56,5 +66,6 @@ export default {
     createPost,
     updatePost,
     findPostById,
+    getPosts,
     deletePost,
 }
