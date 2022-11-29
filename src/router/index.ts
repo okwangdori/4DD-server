@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import postRouter from "./postRouter";
 import userRouter from "./userRouter";
-import boardRouter from "./userRouter";
+import boardRouter from "./boardRouter";
 import unitRouter from "./unitRouter";
 import jwtMiddleware from "../middlewares/jwtMiddleware";
 
