@@ -3,7 +3,7 @@ export interface postCreateDto {
     userName: string;
     title: string;
     content: string;
-    dateTimeOfPosting: Date;
+    dateTimeOfPosting?: Date;
     additional?: {
         category: string;
         season: string;

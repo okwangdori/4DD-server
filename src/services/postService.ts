@@ -5,6 +5,7 @@ import { postResponseDto } from "../interfaces/post/postResponseDto";
 import { postUpdateDto } from "../interfaces/post/postUpdateDto";
 import logger from "../log/logger";
 import Post from "../models/Post";
+import moment from "moment";
 
 
 
@@ -12,8 +13,10 @@ const createPost = async (postCreateDto: postCreateDto): Promise<postBaseRespons
     try {
     	// create를 위해 각 filed명에 값들을 할당시켜준다.
         const post = new Post({
+            userName: postCreateDto.userName,
             title: postCreateDto.title,
             content: postCreateDto.content,
+            dateTimeOfPosting: moment().format("YYYY-MM-DD hh:mm:ss"),
             additional: {
                 category: postCreateDto.additional?.category,
                 season: postCreateDto.additional?.season,
@@ -65,7 +68,6 @@ const findPostById = async (postId: string): Promise<postResponseDto | null> => 
 const getPosts = async (): Promise<any> => {
     try {
         const posts = await Post.find();
-        logger.info("######### posts : "+ posts);
         if (!posts) {
             return null;
         }

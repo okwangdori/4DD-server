@@ -5,11 +5,11 @@ import statusCode from "../modules/statusCode";
 import message from "../modules/responseMessage";
 import util from "../modules/util";
 import { postService } from "../services";
+import logger from "../log/logger";
 
 
 const createPost = async (req: Request, res: Response): Promise<void> => {
-    const postCreateDto: postCreateDto = req.body;
-    
+    const postCreateDto: postCreateDto = req.body;    
     try {
         const data = await postService.createPost(postCreateDto);
         res.status(statusCode.CREATED).send(util.success(statusCode.CREATED, message.CREATE_POST_SUCCESS, data));
@@ -52,8 +52,8 @@ const getPosts = async (req: Request, res: Response): Promise<void> => {
 }
 
 const deletePost = async (req: Request, res: Response): Promise<void> => {
-    const { postId } = req.params;
-
+    const postId: any = req.query.postId;
+    logger.info("#### postId : "+ postId)
     try {
         const data = await postService.deletePost(postId);
         res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.DELETE_POST_SUCCESS, data));
