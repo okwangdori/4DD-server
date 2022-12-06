@@ -19,9 +19,9 @@ const createPost = async (req: Request, res: Response): Promise<void> => {
 }
 
 const updatePost = async (req: Request, res: Response): Promise<void> => {
-    const postUpdateDto: postUpdateDto = req.body;
-    const { postId } = req.params;
-
+    const postId: any = req.query.postId;
+    let postUpdateDto: postUpdateDto = req.body;
+    postUpdateDto.dateTimeOfPosting = Date.now();
     try {
         const data = await postService.updatePost(postId, postUpdateDto);
         res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.UPDATE_POST_SUCCESS, data));
@@ -53,7 +53,6 @@ const getPosts = async (req: Request, res: Response): Promise<void> => {
 
 const deletePost = async (req: Request, res: Response): Promise<void> => {
     const postId: any = req.query.postId;
-    logger.info("#### postId : "+ postId)
     try {
         const data = await postService.deletePost(postId);
         res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.DELETE_POST_SUCCESS, data));

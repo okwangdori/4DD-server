@@ -2,9 +2,10 @@
 import mongoose from "mongoose";
 
 export interface postUpdateDto {
-    _id: mongoose.Schema.Types.ObjectId;
+    userName?: string;
     title?: string;
     content?: string;
+    dateTimeOfPosting?: any;
     additional?: {
         category: string;
         season: string;
