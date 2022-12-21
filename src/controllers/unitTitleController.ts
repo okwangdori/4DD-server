@@ -42,6 +42,17 @@ const findUnitTitleById = async (req: Request, res: Response): Promise<void> => 
     }
 }
 
+const findUnitTitleTree = async (req: Request, res: Response): Promise<void> => {
+    const { unitTitleId } = req.params;
+
+    try {
+        const data = await unitTitleService.findUnitTitleTree(unitTitleId);
+        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
 const findUnitTitleAll = async (req: Request, res: Response): Promise<void> => {
     try {
         const data = await unitTitleService.findUnitTitleAll();
@@ -66,6 +77,7 @@ export default {
     createUnitTitle,
     updateUnitTitle,
     findUnitTitleById,
+    findUnitTitleTree,
     findUnitTitleAll,
     deleteUnitTitle,
 }

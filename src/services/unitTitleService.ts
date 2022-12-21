@@ -4,6 +4,8 @@ import { unitTitleResponseDto } from "../interfaces/unitTitle/unitTitleResponseD
 import { unitTitleUpdateDto } from "../interfaces/unitTitle/unitTitleUpdateDto";
 import UnitTitle from "../models/UnitTitle";
 import logger from "../log/logger";
+import mongoose from "mongoose";
+import convertToTrees from "../utills/treeStructure";
 
 const createUnitTitle = async (unitTitleCreateDto: unitTitleCreateDto): Promise<unitTitleBaseResponseDto> => {
     try {
@@ -11,9 +13,14 @@ const createUnitTitle = async (unitTitleCreateDto: unitTitleCreateDto): Promise<
         const unitTitle = new UnitTitle({
             title: unitTitleCreateDto.title,
             content: unitTitleCreateDto.content,
+            category: unitTitleCreateDto.category,
+            category_number: unitTitleCreateDto.category_number,
+            menu_level : unitTitleCreateDto.menu_level,
+            menu_id: unitTitleCreateDto.menu_id,
+            parents_menu_id : unitTitleCreateDto.parents_menu_id,
+            useYN : unitTitleCreateDto.useYN,
             additional: {
-                category: unitTitleCreateDto.additional?.category,
-                category_number: unitTitleCreateDto.additional?.category_number,
+
             }
         });
         await unitTitle.save();
@@ -24,7 +31,7 @@ const createUnitTitle = async (unitTitleCreateDto: unitTitleCreateDto): Promise<
 
         return data;
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         throw error;
     }
 }
@@ -40,7 +47,7 @@ const updateUnitTitle = async (unitTitleId: string, unitTitleUpdateDto: unitTitl
         return unitTitle;
 
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         throw error;
     }
 }
@@ -48,20 +55,139 @@ const updateUnitTitle = async (unitTitleId: string, unitTitleUpdateDto: unitTitl
 const findUnitTitleById = async (unitTitleId: string): Promise<unitTitleResponseDto | null> => {
     try {
         const unitTitle = await UnitTitle.findById(unitTitleId);
+
+		if (!unitTitle) {
+            return null;
+        }
+        return unitTitle;
+
+    } catch (error) {
+        logger.error(error);
+        throw error;
+    }
+}
+
+const findUnitTitleTree = async (unitTitleId: string): Promise<unitTitleResponseDto | null | any[]> => {
+    try {
+        const ObjectId = mongoose.Types.ObjectId;
+        
+        const unitTitle = await UnitTitle.aggregate([
+            {'$match': {'_id': new ObjectId(unitTitleId)}}, 
+            {'$graphLookup': {
+                'from': 'unittitles', 
+                'startWith': '$parents_menu_id', 
+                'connectFromField': 'parents_menu_id', 
+                'connectToField': 'menu_id', 
+                'depthField': 'level', 
+                'as': 'childMenu'
+                }
+            }, 
+            {'$unwind': {
+                'path': '$childMenu', 
+                'preserveNullAndEmptyArrays': true
+                }
+            }, 
+            {'$sort': {
+                'childMenu.level': -1
+                }
+            }, 
+            {'$group': {
+                '_id': '$_id', 
+                'title': {'$first': '$title'}, 
+                'content': {'$first': '$content'}, 
+                'category': {'$first': '$category'}, 
+                'category_number': {'$first': '$category_number'}, 
+                'parents_menu_id': {'$first': '$parents_menu_id'}, 
+                'menu_id': {'$first': '$menu_id'}, 
+                'childMenu': {
+                    '$push': {
+                        '_id': '$childMenu._id', 
+                        'title': '$childMenu.title', 
+                        'content': '$childMenu.content', 
+                        'category': '$childMenu.category', 
+                        'category_number': '$childMenu.category_number', 
+                        'parents_menu_id': '$childMenu.parents_menu_id', 
+                        'menu_id': '$childMenu.menu_id', 
+                        'level': '$childMenu.level'
+                    }
+                }
+            }
+            }, 
+            {'$addFields': {
+                'childMenu': {
+                    '$reduce': {
+                        'input': '$childMenu', 
+                        'initialValue': {
+                            'level': -1, 
+                            'presentChild': [], 
+                            'prevChild': []
+                        }, 
+                        'in': {
+                            '$let': {
+                                'vars': {
+                                    'prev': {
+                                        '$cond': [
+                                            {'$eq': ['$$value.level', '$$this.level']}, 
+                                            '$$value.prevChild', '$$value.presentChild'
+                                        ]
+                                    }, 
+                                    'current': {
+                                        '$cond': [
+                                            {'$eq': ['$$value.level', '$$this.level']}, 
+                                            '$$value.presentChild', 
+                                            []
+                                        ]
+                                    }
+                                }, 
+                                'in': {
+                                    'level': '$$this.level', 
+                                    'prevChild': '$$prev', 
+                                    'presentChild': {
+                                        '$concatArrays': [
+                                            '$$current', [{
+                                                '_id': '$$this._id', 
+                                                'title': '$$this.title', 
+                                                'content': '$$this.content', 
+                                                'category': '$$this.category', 
+                                                'category_number': '$$this.category_number', 
+                                                'parents_menu_id': '$$this.parents_menu_id', 
+                                                'menu_id': '$$this.menu_id', 
+                                                'level': '$$this.level', 
+                                                'childMenu': {
+                                                    '$filter': {
+                                                        'input': '$$prev', 
+                                                        'as': 'e', 
+                                                        'cond': {'$eq': ['$$e.menu_id', '$$this.parents_menu_id']}
+                                                    }
+                                                }
+                                            }]
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            }, 
+            {'$addFields': {'childMenu': '$childMenu.presentChild'}}
+        ]);
+        
         if (!unitTitle) {
             return null;
         }
         return unitTitle;
         
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         throw error;
     }
 }
 
 const findUnitTitleAll = async () => {
     try {
-        let unitTitle = await UnitTitle.find().sort( { "additional.category_number": 1, "dateTimeOfUnitTitleCreating": -1 } );
+        let unitTitle = await UnitTitle.find({menu_level : 1}).populate('children')
+            .sort( { "category_number": 1, "dateTimeOfUnitTitleCreating": -1 } ).exec();
 
         //오브젝트용 가공 샘플
         // interface ObjType {
@@ -74,11 +200,11 @@ const findUnitTitleAll = async () => {
             return null;
         }else{
             unitTitle.map((e, i) => {
-                if(list[e.additional.category_number]) {
-                    list[e.additional.category_number].push(e);
+                if(list[e.category_number]) {
+                    list[e.category_number].push(e);
                 }else{
-                    list[e.additional.category_number] = [];
-                    list[e.additional.category_number].push(e);
+                    list[e.category_number] = [];
+                    list[e.category_number].push(e);
                 }
                 //오브젝트용 가공 샘플
                 // if(obj[e.additional.category]) {
@@ -105,7 +231,7 @@ const deleteUnitTitle = async (unitTitleId: string): Promise<unitTitleResponseDt
         }
         return unitTitle;
     } catch (error) {
-        console.log(error)
+        logger.error(error)
         throw error;
     }
 }
@@ -114,6 +240,7 @@ export default {
     createUnitTitle,
     updateUnitTitle,
     findUnitTitleById,
+    findUnitTitleTree,
     findUnitTitleAll,
     deleteUnitTitle,
 }

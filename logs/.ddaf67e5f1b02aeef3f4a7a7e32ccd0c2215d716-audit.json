@@ -6,14 +6,14 @@
     "auditLog": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\.ddaf67e5f1b02aeef3f4a7a7e32ccd0c2215d716-audit.json",
     "files": [
         {
-            "date": 1668231549879,
-            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\2022-11-12.log",
-            "hash": "fc5e2c4dd70c07bd38ae854d09d53789cb5a25a4e3439e68e55545f4999da1e9"
+            "date": 1671428590729,
+            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\2022-12-19.log",
+            "hash": "97fbddd16b180ccacf5085a9a3bc6e434c52c9fb63b97060f641e6b029e3282c"
         },
         {
-            "date": 1668399404814,
-            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\2022-11-14.log",
-            "hash": "956c0ee9e501f79b19072000e0028d3d9e13df842e9d852773ad47db81917036"
+            "date": 1671525055206,
+            "name": "C:\\Users\\hwi\\Desktop\\dev\\workspace\\ForDD\\server\\logs\\2022-12-20.log",
+            "hash": "e5d3f9bee2085182114746b8560d8beb1d5c5b9d4728e81af94fe7cce59f0b50"
         }
     ],
     "hashType": "sha256"
