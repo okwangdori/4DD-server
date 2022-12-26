@@ -11,8 +11,8 @@ interface userData {
     id: string;
     name?: string;
     email?: string;
-    accessToken: string;
-    refreshToken: string;
+    // accessToken: string;
+    // refreshToken: string;
 }
 
 const checkName = async (userInfoDto: userInfoDto): Promise<userInfoDto | null> => {
@@ -115,8 +115,8 @@ const login = async (userCreateDto: userCreateDto): Promise<userResponseDto | nu
             id: user._id,
             name: user.name,
             email: user.email,
-            accessToken: createToken('access', tokenOption),
-            refreshToken: createToken('refresh', tokenOption)
+            // accessToken: createToken('access', tokenOption),
+            // refreshToken: createToken('refresh', tokenOption)
         }
         return userData;
         

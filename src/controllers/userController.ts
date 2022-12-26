@@ -7,6 +7,7 @@ import message from "../modules/responseMessage";
 import util from "../modules/util";
 import { userService } from "../services";
 import { ACCESSTOKEN, REFRESHTOKEN, accessTokenCookieOptions, refreshTokenCookieOptions } from '../constants';
+import { createToken } from "../utills/jwt.utill";
 import logger from "../log/logger";
 
 
@@ -70,8 +71,12 @@ const login = async (req: Request, res: Response): Promise<void> => {
     try {
         
         const data = await userService.login(userCreateDto);
-        res.cookie(REFRESHTOKEN, data?.refreshToken, refreshTokenCookieOptions);
-        res.cookie(ACCESSTOKEN, data?.accessToken, accessTokenCookieOptions);                
+        const tokenOption: any = {
+            id: data?._id,
+            email: data?.email
+        };  
+        res.cookie(REFRESHTOKEN, createToken('access', tokenOption), refreshTokenCookieOptions);
+        res.cookie(ACCESSTOKEN, createToken('refresh', tokenOption), accessTokenCookieOptions);                
         if(data) {
             res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.LOGIN_SUCCESS, data));
         }else{
