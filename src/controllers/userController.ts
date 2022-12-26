@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import { userInfoDto } from "../interfaces/user/userInfoDto";
 import { userCreateDto } from "../interfaces/user/userCreateDto";
 import { userUpdateDto } from "../interfaces/user/userUpdateDto";
 import statusCode from "../modules/statusCode";
@@ -9,11 +10,22 @@ import { ACCESSTOKEN, REFRESHTOKEN, accessTokenCookieOptions, refreshTokenCookie
 import logger from "../log/logger";
 
 
-const signup = async (req: Request, res: Response): Promise<void> => {
+const register = async (req: Request, res: Response): Promise<void> => {
+    const userInfoDto: userInfoDto = req.body;    
     const userCreateDto: userCreateDto = req.body;    
     try {
-        const data = await userService.signup(userCreateDto);
-        res.status(statusCode.CREATED).send(util.success(statusCode.CREATED, message.CREATE_USER_SUCCESS, data));
+        const checkName = await userService.checkName(userInfoDto);
+        const checkEmail = await userService.checkEmail(userInfoDto);
+        if(checkName) {
+            res.status(statusCode.FORBIDDEN).send(util.fail(statusCode.FORBIDDEN, message.ALREADY_EXIST_NAME));
+            return;
+        }
+        if(checkEmail) {
+            res.status(statusCode.FORBIDDEN).send(util.fail(statusCode.FORBIDDEN, message.ALREADY_EXIST_EMAIL));
+            return;
+        }
+        const data = await userService.register(userCreateDto);
+        res.status(statusCode.CREATED).send(util.success(statusCode.CREATED, message.CREATE_USER_SUCCESS, data));        
     } catch (error) {
         res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
     }
@@ -80,6 +92,16 @@ const logout = async (req: Request, res: Response): Promise<void> => {
     }
 }
 
+const changePassword = async (req: Request, res: Response): Promise<void> => {    
+    const userUpdateDto: userUpdateDto = req.body;    
+    try {
+        const data = await userService.changePassword(userUpdateDto);
+        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.CHANGE_PASSWORD_SUCCESS, data));
+    } catch (error) {
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
+    }
+}
+
 const deleteUser = async (req: Request, res: Response): Promise<void> => {
     const { userId } = req.params;
 
@@ -92,11 +114,12 @@ const deleteUser = async (req: Request, res: Response): Promise<void> => {
 }
 
 export default {
-    signup,
+    register,
     updateUser,
     findUserById,
     getUsers,
     login,
     logout,
+    changePassword,
     deleteUser,
 }

@@ -1,8 +1,10 @@
 // interfaces/post/PostInfo.ts -> model 정의 용도
-export interface postInfo {
+export interface postInfoDto {
+    userName: string;
     title: string;
     content: string;
-    additional: {
+    dateTimeOfPosting: Date;
+    additional?: {
         category: string;
         season: string;
     };
