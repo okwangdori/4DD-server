@@ -92,10 +92,34 @@ const findUnitTitleById = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const { unitTitleId } = req.params;
-
   try {
+    const { unitTitleId } = req.params;
     const data = await unitTitleService.findUnitTitleById(unitTitleId);
+    let resultData = null;
+
+    res
+      .status(statusCode.CREATED)
+      .send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));
+  } catch (error) {
+    res
+      .status(statusCode.INTERNAL_SERVER_ERROR)
+      .send(
+        util.fail(
+          statusCode.INTERNAL_SERVER_ERROR,
+          message.INTERNAL_SERVER_ERROR
+        )
+      );
+  }
+};
+
+const findUnitTitleAndDetailById = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { unitTitleId } = req.params;
+    const data = await unitTitleService.findUnitTitleAndDetailById(unitTitleId);
+
     res
       .status(statusCode.CREATED)
       .send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));
@@ -174,12 +198,39 @@ const deleteUnitTitle = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
+const deleteUnitTitleTree = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const data = await unitTitleService.deleteUnitTitleTree(
+      req.body.selectedList
+    );
+    res
+      .status(statusCode.CREATED)
+      .send(
+        util.success(statusCode.OK, message.DELETE_UNIT_TITLE_SUCCESS, data)
+      );
+  } catch (error) {
+    res
+      .status(statusCode.INTERNAL_SERVER_ERROR)
+      .send(
+        util.fail(
+          statusCode.INTERNAL_SERVER_ERROR,
+          message.INTERNAL_SERVER_ERROR
+        )
+      );
+  }
+};
+
 export default {
   createUnitTitle,
   updateUnitTitle,
   updateUnitTitleTree,
   findUnitTitleById,
+  findUnitTitleAndDetailById,
   findUnitTitleTree,
   findUnitTitleAll,
   deleteUnitTitle,
+  deleteUnitTitleTree,
 };

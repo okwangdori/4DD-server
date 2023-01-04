@@ -5,8 +5,7 @@ import { unitTitleUpdateDto } from "../interfaces/unitTitle/unitTitleUpdateDto";
 import UnitTitle from "../models/UnitTitle";
 import logger from "../log/logger";
 import mongoose from "mongoose";
-import convertToTrees from "../utills/treeStructure";
-import { AnyBulkWriteOperation } from "mongodb";
+import { AnyBulkWriteOperation, BulkWriteResult } from "mongodb";
 
 const createUnitTitle = async (
   unitTitleCreateDto: unitTitleCreateDto
@@ -99,6 +98,27 @@ const findUnitTitleById = async (
 ): Promise<unitTitleResponseDto | null> => {
   try {
     const unitTitle = await UnitTitle.findById(unitTitleId);
+
+    if (!unitTitle) {
+      return null;
+    }
+    return unitTitle;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
+const findUnitTitleAndDetailById = async (
+  unitTitleId: string
+): Promise<unitTitleResponseDto | null> => {
+  try {
+    // const unitTitle = await UnitTitle.findById(unitTitleId);
+
+    let unitTitle = await UnitTitle.findById(unitTitleId)
+      .populate("content")
+      .sort({ category_number: 1, dateTimeOfUnitTitleCreating: -1 })
+      .exec();
 
     if (!unitTitle) {
       return null;
@@ -248,9 +268,10 @@ const findUnitTitleTree = async (
 const findUnitTitleAll = async () => {
   try {
     let unitTitle = await UnitTitle.find({ menu_level: 1 })
-      .populate("children")
       .sort({ category_number: 1, dateTimeOfUnitTitleCreating: -1 })
       .exec();
+
+    // .populate("children")
 
     //오브젝트용 가공 샘플
     // interface ObjType {
@@ -301,12 +322,48 @@ const deleteUnitTitle = async (
   }
 };
 
+let deleteBulkArr: AnyBulkWriteOperation<any>[] = [];
+
+const getDeleteChildId = (list: any[]) => {
+  list.map((v: { [key: string]: any }, i: number) => {
+    deleteBulkArr.push({
+      deleteOne: {
+        filter: { _id: v._id },
+      },
+    });
+    if (v.childMenu.length > 0) {
+      getDeleteChildId(v.childMenu);
+    }
+  });
+};
+
+const deleteUnitTitleTree = async (
+  list: any[]
+): Promise<BulkWriteResult | null> => {
+  try {
+    getDeleteChildId([list]);
+
+    const unitTitle = await UnitTitle.bulkWrite(deleteBulkArr);
+
+    if (!unitTitle) {
+      return null;
+    }
+
+    return unitTitle;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
 export default {
   createUnitTitle,
   updateUnitTitle,
   updateUnitTitleTree,
   findUnitTitleById,
+  findUnitTitleAndDetailById,
   findUnitTitleTree,
   findUnitTitleAll,
   deleteUnitTitle,
+  deleteUnitTitleTree,
 };
