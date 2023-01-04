@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 // interfaces/unitTitle/unitTitleCreateDto.ts -> create 용
 export interface unitTitleCreateDto {
     title: string;

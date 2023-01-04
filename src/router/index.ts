@@ -7,7 +7,7 @@ import jwtMiddleware from "../middlewares/jwtMiddleware";
 
 const router: Router = Router();
 
-//글쓰기 읽기 수정하기 삭제하기 참고용 api
+//게시판 api
 router.use('/post', postRouter);
 
 //단원 api
@@ -17,6 +17,6 @@ router.use('/unit/title', unitRouter);
 router.use('/user', jwtMiddleware, userRouter);
 
 //게시판 api
-router.use('/board', jwtMiddleware, boardRouter);
+router.use('/board', boardRouter);
 
 export default router;

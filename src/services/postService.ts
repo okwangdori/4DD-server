@@ -1,9 +1,7 @@
 import { postBaseResponseDto } from "../interfaces/common/postBaseResponseDto";
 import { postCreateDto } from "../interfaces/post/postCreateDto";
-import { postInfoDto } from "../interfaces/post/postInfoDto";
 import { postResponseDto } from "../interfaces/post/postResponseDto";
 import { postUpdateDto } from "../interfaces/post/postUpdateDto";
-import logger from "../log/logger";
 import Post from "../models/Post";
 import moment from "moment";
 
@@ -93,9 +91,9 @@ const deletePost = async (postId: string): Promise<postResponseDto | null> => {
 }
 
 export default {
-    createPost,
+    createPost,    
     updatePost,
     findPostById,
     getPosts,
-    deletePost,
+    deletePost
 }
