@@ -17,8 +17,8 @@ const createComment = async (commentCreateDto: commentCreateDto): Promise<commen
           content: commentCreateDto.content,
           comment_level: commentCreateDto.comment_level,
           comment_id: commentCreateDto?.comment_id,
-          parents_comment_id: commentCreateDto?.parents_comment_id,
-          dateTimeOfPosting: moment().format("YYYY-MM-DD hh:mm:ss"),
+          parentsComment: commentCreateDto?.parentsComment,
+          dateTimeOfComment: moment().format("YYYY-MM-DD hh:mm:ss"),
           parent: commentCreateDto?.parent,
           children: commentCreateDto?.children,  
       });
@@ -105,10 +105,10 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
       { $match: { _id: new ObjectId(commentId) } },
       {
         $graphLookup: {
-          from: "comments",
-          startWith: "$parents_comment_id",
-          connectFromField: "parents_comment_id",
-          connectToField: "comment_id",
+          from: "Comment",
+          startWith: "$parentsComment",
+          connectFromField: "parentsComment",
+          connectToField: "_id",
           depthField: "level",
           as: "childComment",
         },
@@ -131,8 +131,8 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
           userName: { $first: "$userName" },
           content: { $first: "$content" },
           comment_id: { $first: "$comment_id" },
-          dateTimeOfPosting: { $first: "$dateTimeOfPosting" },
-          parents_comment_id: { $first: "$parents_comment_id" },
+          dateTimeOfComment: { $first: "$dateTimeOfComment" },
+          parentsComment: { $first: "$parentsComment" },
           childComment: {
             $push: {
               _id: "$childComment._id",
@@ -140,8 +140,8 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
               userName: "$childComment.userName",
               content: "$childComment.content",
               comment_id: "$childComment.comment_id",
-              dateTimeOfPosting: "$childComment.dateTimeOfPosting",
-              parents_comment_id: "$childComment.parents_comment_id",
+              dateTimeOfComment: "$childComment.dateTimeOfComment",
+              parentsComment: "$childComment.parentsComment",
               level: "$childComment.level",
             },
           },
@@ -188,8 +188,8 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
                             userName: "$$this.userName",
                             content: "$$this.content",
                             comment_id: "$$this.comment_id",
-                            dateTimeOfPosting: "$$this.dateTimeOfPosting",
-                            parents_comment_id: "$$this.parents_comment_id",
+                            dateTimeOfComment: "$$this.dateTimeOfComment",
+                            parentsComment: "$$this.parentsComment",
                             level: "$$this.level",
                             childComment: {
                               $filter: {
@@ -198,7 +198,7 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
                                 cond: {
                                   $eq: [
                                     "$$e.comment_id",
-                                    "$$this.parents_comment_id",
+                                    "$$this.parentsComment",
                                   ],
                                 },
                               },
@@ -229,9 +229,9 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
 
 const findCommentAll = async () => {
   try {
-    let comment = await Comment.find({ menu_level: 1 })
-      .populate("children")
-      .sort({ category_number: 1, dateTimeOfCommentCreating: -1 })
+    let comment = await Comment.find({ comment_level: 0 })
+      .populate("parentsComment")
+      .sort({ dateTimeOfCommentCreating: -1 })
       .exec();
 
     //오브젝트용 가공 샘플
@@ -245,11 +245,11 @@ const findCommentAll = async () => {
       return null;
     } else {
       comment.map((e: any, i) => {
-        if (list[e.post_id]) {
-          list[e.post_id].push(e);
+        if (list[i]) {
+          list[i].push(e);
         } else {
-          list[e.post_id] = [];
-          list[e.post_id].push(e);
+          list[i] = [];
+          list[i].push(e);
         }
         //오브젝트용 가공 샘플
         // if(obj[e.additional.category]) {
@@ -260,7 +260,6 @@ const findCommentAll = async () => {
         // }
       });
     }
-
     return list;
   } catch (error) {
     logger.error(error);

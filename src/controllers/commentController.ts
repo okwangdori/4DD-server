@@ -34,8 +34,7 @@ const createComment = async (req: Request, res: Response): Promise<void> => {
 
 const updateComment = async (req: Request, res: Response): Promise<void> => {
   const commentUpdateDto: commentUpdateDto = req.body;
-  const { commentId } = req.params;
-
+  const commentId: any = req.query.commentId;
   try {
     const data = await commentService.updateComment(
       commentId,
@@ -114,7 +113,6 @@ const findCommentTree = async (
   res: Response
 ): Promise<void> => {
   const { commentId } = req.params;
-
   try {
     const data = await commentService.findCommentTree(commentId);
     res
@@ -135,6 +133,7 @@ const findCommentTree = async (
 const findCommentAll = async (req: Request, res: Response): Promise<void> => {
   try {
     const data = await commentService.findCommentAll();
+    logger.info("#### data : "+ data)
     res
       .status(statusCode.CREATED)
       .send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));

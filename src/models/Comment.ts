@@ -4,6 +4,11 @@ import { commentInfoDto } from "../interfaces/comment/commentInfoDto";
 const { Schema } = mongoose;
 
 const CommentSchema = new Schema({
+        // post: {
+        //     type: mongoose.Schema.Types.ObjectId,
+        //     ref: 'Post',
+        //     require: true,
+        // },
         post_id: {
             type: String,
             required: true
@@ -23,23 +28,27 @@ const CommentSchema = new Schema({
         comment_id: {
             type: String
         },
-        parents_comment_id: {
-            type: String
+        parentsComment: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Comment',
         },
         dateTimeOfComment: {
             type: Date,
             required: true,
             default: Date.now,
         },
-        parent : {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Comment"
-        },
-        
-        children : [{
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Comment"
-        }]
+        // parentComment: { // 1
+        //     type: mongoose.Schema.Types.ObjectId,
+        //     ref: 'Comment',
+        // },
+        // depth: {
+        //     type: Number,
+        //     default: 1,
+        // },
+        isDeleted: { // 2
+            type: Boolean,
+            default: false,
+        }
     },
     { toObject: { virtuals: true }, toJSON: { virtuals: true } }
 );
@@ -47,8 +56,17 @@ const CommentSchema = new Schema({
 CommentSchema.virtual('comments', {
     ref: 'Comment',
     localField: '_id',
-    foreignField: 'parent',
+    foreignField: 'parentsComment',
 });
+
+// CommentSchema
+//   .virtual('childComments')
+//   .get(function () {
+//     return this._childComments;
+//   })
+//   .set(function (v) {
+//     this._childComments = v;
+// });
   
 // CommentSchema.virtual('child').get(function () {
 //     return this.child;
