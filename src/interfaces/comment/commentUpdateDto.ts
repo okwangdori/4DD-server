@@ -6,8 +6,7 @@ export interface commentUpdateDto {
     userName?: string;
     content?: string;
     comment_level?: number;
-    comment_id?: string;
-    parentsComment?: string;
+    parentsComment?: mongoose.Schema.Types.ObjectId;
     dateTimeOfPosting?: Date;
     parent?: mongoose.Schema.Types.ObjectId;
     children?: [mongoose.Schema.Types.ObjectId];

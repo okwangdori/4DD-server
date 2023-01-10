@@ -16,7 +16,6 @@ const createComment = async (commentCreateDto: commentCreateDto): Promise<commen
           userName: commentCreateDto.userName,
           content: commentCreateDto.content,
           comment_level: commentCreateDto.comment_level,
-          comment_id: commentCreateDto?.comment_id,
           parentsComment: commentCreateDto?.parentsComment,
           dateTimeOfComment: moment().format("YYYY-MM-DD hh:mm:ss"),
           parent: commentCreateDto?.parent,
@@ -97,18 +96,17 @@ const updateCommentTree = async (commentId: string, commentUpdateDto: commentUpd
     }
 };
 
-const findCommentTree = async (commentId: string): Promise<commentResponseDto | null | any[]> => {
-  try {
-    const ObjectId = mongoose.Types.ObjectId;
+const findCommentTree = async (postId: string): Promise<commentResponseDto | null | any[]> => {
+  try {  
 
     const comment = await Comment.aggregate([
-      { $match: { _id: new ObjectId(commentId) } },
+      { $match: { post_id: (postId) } },
       {
         $graphLookup: {
-          from: "Comment",
-          startWith: "$parentsComment",
-          connectFromField: "parentsComment",
-          connectToField: "_id",
+          from: "comments",
+          startWith: "$_id",
+          connectFromField: "_id",
+          connectToField: "parentsComment",
           depthField: "level",
           as: "childComment",
         },
@@ -130,7 +128,6 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
           post_id: { $first: "$post_id" },
           userName: { $first: "$userName" },
           content: { $first: "$content" },
-          comment_id: { $first: "$comment_id" },
           dateTimeOfComment: { $first: "$dateTimeOfComment" },
           parentsComment: { $first: "$parentsComment" },
           childComment: {
@@ -139,10 +136,8 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
               post_id: "$childComment.post_id",
               userName: "$childComment.userName",
               content: "$childComment.content",
-              comment_id: "$childComment.comment_id",
               dateTimeOfComment: "$childComment.dateTimeOfComment",
               parentsComment: "$childComment.parentsComment",
-              level: "$childComment.level",
             },
           },
         },
@@ -187,7 +182,6 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
                             post_id: "$$this.post_id",
                             userName: "$$this.userName",
                             content: "$$this.content",
-                            comment_id: "$$this.comment_id",
                             dateTimeOfComment: "$$this.dateTimeOfComment",
                             parentsComment: "$$this.parentsComment",
                             level: "$$this.level",
@@ -197,8 +191,8 @@ const findCommentTree = async (commentId: string): Promise<commentResponseDto | 
                                 as: "e",
                                 cond: {
                                   $eq: [
-                                    "$$e.comment_id",
-                                    "$$this.parentsComment",
+                                    "$$e.parentsComment",
+                                    "$$this._id",
                                   ],
                                 },
                               },

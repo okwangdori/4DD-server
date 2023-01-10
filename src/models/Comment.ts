@@ -25,9 +25,6 @@ const CommentSchema = new Schema({
             required: true,
             default: 1
         },
-        comment_id: {
-            type: String
-        },
         parentsComment: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Comment',

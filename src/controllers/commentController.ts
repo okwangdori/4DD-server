@@ -112,9 +112,10 @@ const findCommentTree = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const { commentId } = req.params;
+  const { postId } = req.params;
+  logger.info("### postId : "+ postId)
   try {
-    const data = await commentService.findCommentTree(commentId);
+    const data = await commentService.findCommentTree(postId);
     res
       .status(statusCode.CREATED)
       .send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));
@@ -133,7 +134,6 @@ const findCommentTree = async (
 const findCommentAll = async (req: Request, res: Response): Promise<void> => {
   try {
     const data = await commentService.findCommentAll();
-    logger.info("#### data : "+ data)
     res
       .status(statusCode.CREATED)
       .send(util.success(statusCode.OK, message.READ_UNIT_TITLE_SUCCESS, data));

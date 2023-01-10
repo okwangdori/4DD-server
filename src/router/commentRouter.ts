@@ -8,7 +8,7 @@ router.put('/:commentId', commentController.updateComment);
 router.put("/list/:commentId", commentController.updateCommentTree);
 router.get("/", commentController.findCommentAll);
 router.get("/:postId", commentController.findPostById);
-router.get("/list/:commentId", commentController.findCommentTree);
+router.get("/list/:postId", commentController.findCommentTree);
 router.delete('/:commentId', commentController.deleteComment);
 
 export default router;
