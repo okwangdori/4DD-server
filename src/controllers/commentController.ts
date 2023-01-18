@@ -113,7 +113,6 @@ const findCommentTree = async (
   res: Response
 ): Promise<void> => {
   const { postId } = req.params;
-  logger.info("### postId : "+ postId)
   try {
     const data = await commentService.findCommentTree(postId);
     res

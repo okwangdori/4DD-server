@@ -100,7 +100,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
   try {  
 
     const comment = await Comment.aggregate([
-      { $match: { post_id: (postId) } },
+      { $match: { post_id: (postId) } },      
       {
         $graphLookup: {
           from: "comments",
@@ -209,6 +209,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
         },
       },
       { $addFields: { childComment: "$childComment.presentChild" } },
+      { $sort : { dateTimeOfComment : 1 } },
     ]);
 
     if (!comment) {
