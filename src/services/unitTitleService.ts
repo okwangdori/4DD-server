@@ -11,17 +11,14 @@ const createUnitTitle = async (
   unitTitleCreateDto: unitTitleCreateDto
 ): Promise<unitTitleBaseResponseDto> => {
   try {
-    // create를 위해 각 filed명에 값들을 할당시켜준다.
     const unitTitle = new UnitTitle({
       title: unitTitleCreateDto.title,
       content: unitTitleCreateDto.content,
       category: unitTitleCreateDto.category,
       category_number: unitTitleCreateDto.category_number,
+      parent_unit_id: unitTitleCreateDto.parent_unit_id,
       menu_level: unitTitleCreateDto.menu_level,
-      menu_id: unitTitleCreateDto.menu_id,
-      parents_menu_id: unitTitleCreateDto.parents_menu_id,
       useYN: unitTitleCreateDto.useYN,
-      additional: {},
     });
     await unitTitle.save();
 
@@ -141,9 +138,9 @@ const findUnitTitleTree = async (
       {
         $graphLookup: {
           from: "unittitles",
-          startWith: "$parents_menu_id",
-          connectFromField: "parents_menu_id",
-          connectToField: "menu_id",
+          startWith: "$_id",
+          connectFromField: "_id",
+          connectToField: "parent_unit_id",
           depthField: "level",
           as: "childMenu",
         },
@@ -166,9 +163,9 @@ const findUnitTitleTree = async (
           content: { $first: "$content" },
           category: { $first: "$category" },
           category_number: { $first: "$category_number" },
-          parents_menu_id: { $first: "$parents_menu_id" },
-          menu_id: { $first: "$menu_id" },
+          parent_unit_id: { $first: "$parent_unit_id" },
           useYN: { $first: "$useYN" },
+          menu_level: { $first: "$menu_level" },
           childMenu: {
             $push: {
               _id: "$childMenu._id",
@@ -176,9 +173,9 @@ const findUnitTitleTree = async (
               content: "$childMenu.content",
               category: "$childMenu.category",
               category_number: "$childMenu.category_number",
-              parents_menu_id: "$childMenu.parents_menu_id",
-              menu_id: "$childMenu.menu_id",
+              parent_unit_id: "$childMenu.parent_unit_id",
               useYN: "$childMenu.useYN",
+              menu_level: "$childMenu.menu_level",
               level: "$childMenu.level",
             },
           },
@@ -199,14 +196,18 @@ const findUnitTitleTree = async (
                   vars: {
                     prev: {
                       $cond: [
-                        { $eq: ["$$value.level", "$$this.level"] },
+                        {
+                          $eq: ["$$value.level", "$$this.level"],
+                        },
                         "$$value.prevChild",
                         "$$value.presentChild",
                       ],
                     },
                     current: {
                       $cond: [
-                        { $eq: ["$$value.level", "$$this.level"] },
+                        {
+                          $eq: ["$$value.level", "$$this.level"],
+                        },
                         "$$value.presentChild",
                         [],
                       ],
@@ -225,19 +226,16 @@ const findUnitTitleTree = async (
                             content: "$$this.content",
                             category: "$$this.category",
                             category_number: "$$this.category_number",
-                            parents_menu_id: "$$this.parents_menu_id",
-                            menu_id: "$$this.menu_id",
+                            parent_unit_id: "$$this.parent_unit_id",
                             useYN: "$$this.useYN",
+                            menu_level: "$$this.menu_level",
                             level: "$$this.level",
                             childMenu: {
                               $filter: {
                                 input: "$$prev",
                                 as: "e",
                                 cond: {
-                                  $eq: [
-                                    "$$e.menu_id",
-                                    "$$this.parents_menu_id",
-                                  ],
+                                  $eq: ["$$e.parent_unit_id", "$$this._id"],
                                 },
                               },
                             },
@@ -252,7 +250,11 @@ const findUnitTitleTree = async (
           },
         },
       },
-      { $addFields: { childMenu: "$childMenu.presentChild" } },
+      {
+        $addFields: {
+          childMenu: "$childMenu.presentChild",
+        },
+      },
     ]);
 
     if (!unitTitle) {
@@ -265,6 +267,7 @@ const findUnitTitleTree = async (
   }
 };
 
+// TODO HWI 이미지는 aws s3와같은 storage에 저장하고 db에는 해당 이미지에 접근가능한경로를 저장
 const findUnitTitleAll = async () => {
   try {
     let unitTitle = await UnitTitle.find({ menu_level: 1 })

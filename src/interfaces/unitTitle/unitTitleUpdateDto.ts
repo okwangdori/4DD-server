@@ -7,10 +7,9 @@ export interface unitTitleUpdateDto {
   content?: mongoose.Schema.Types.ObjectId;
   category?: string;
   category_number?: number;
+  parent_unit_id?: mongoose.Schema.Types.ObjectId;
   menu_level?: number;
-  menu_id?: string;
-  parents_menu_id?: string;
   useYN?: string;
-  parent?: mongoose.Schema.Types.ObjectId;
+  title_image_path?: string;
   selectedList?: any[];
 }

@@ -21,32 +21,27 @@ const UnitSchema = new Schema(
       type: Number,
       required: true,
     },
+    parent_unit_id: {
+      type: mongoose.Schema.Types.ObjectId,
+    },
     menu_level: {
       type: Number,
       required: true,
       default: 1,
-    },
-    menu_id: {
-      type: String,
-      required: true,
-    },
-    parents_menu_id: {
-      type: String,
-      required: true,
     },
     useYN: {
       type: String,
       required: true,
       default: "Y",
     },
+    title_image_path: {
+      type: String,
+      required: true,
+    },
     dateTimeOfUnitTitleCreating: {
       type: Date,
       required: true,
       default: Date.now,
-    },
-    parent: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "UnitTitle",
     },
   },
   { toObject: { virtuals: true }, toJSON: { virtuals: true } }
