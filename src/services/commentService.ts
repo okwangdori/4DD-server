@@ -119,7 +119,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
       },
       {
         $sort: {
-          "childComment.level": -1,
+          "childComment.dateTimeOfComment": 1,
         },
       },
       {
@@ -130,6 +130,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
           content: { $first: "$content" },
           dateTimeOfComment: { $first: "$dateTimeOfComment" },
           parentsComment: { $first: "$parentsComment" },
+          isDelete: { $first: "$parentsComment" },
           childComment: {
             $push: {
               _id: "$childComment._id",
@@ -138,6 +139,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
               content: "$childComment.content",
               dateTimeOfComment: "$childComment.dateTimeOfComment",
               parentsComment: "$childComment.parentsComment",
+              isDelete: "$childComment.isDelete",
             },
           },
         },
@@ -184,6 +186,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
                             content: "$$this.content",
                             dateTimeOfComment: "$$this.dateTimeOfComment",
                             parentsComment: "$$this.parentsComment",
+                            isDelete: "$$this.isDelete",
                             level: "$$this.level",
                             childComment: {
                               $filter: {
@@ -266,7 +269,7 @@ const deleteComment = async (
   commentId: string
 ): Promise<commentResponseDto | any> => {
   try {
-    const comment = await Comment.findByIdAndDelete(commentId);
+    const comment = await Comment.findByIdAndUpdate(commentId, {isDeleted: true});
     if (!comment) {
       return null;
     }

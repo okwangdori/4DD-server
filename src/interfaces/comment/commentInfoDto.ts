@@ -7,6 +7,7 @@ export interface commentInfoDto {
     comment_level : number;
     parentsComment: mongoose.Schema.Types.ObjectId;
     dateTimeOfPosting?: Date;
+    isDelete: boolean;
     parent : mongoose.Schema.Types.ObjectId;
     children: [mongoose.Schema.Types.ObjectId];
 }

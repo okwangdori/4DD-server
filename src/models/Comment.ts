@@ -34,14 +34,6 @@ const CommentSchema = new Schema({
             required: true,
             default: Date.now,
         },
-        // parentComment: { // 1
-        //     type: mongoose.Schema.Types.ObjectId,
-        //     ref: 'Comment',
-        // },
-        // depth: {
-        //     type: Number,
-        //     default: 1,
-        // },
         isDeleted: { // 2
             type: Boolean,
             default: false,

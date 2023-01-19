@@ -6,6 +6,7 @@ export interface commentCreateDto {
     content: string;
     comment_level : number;
     parentsComment?: mongoose.Schema.Types.ObjectId;
+    isDelete: boolean;
     dateTimeOfPosting?: Date;
     parent?: mongoose.Schema.Types.ObjectId;
     children?: [mongoose.Schema.Types.ObjectId];
