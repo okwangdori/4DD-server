@@ -130,7 +130,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
           content: { $first: "$content" },
           dateTimeOfComment: { $first: "$dateTimeOfComment" },
           parentsComment: { $first: "$parentsComment" },
-          isDelete: { $first: "$parentsComment" },
+          isDeleted: { $first: "$isDeleted" },
           childComment: {
             $push: {
               _id: "$childComment._id",
@@ -139,7 +139,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
               content: "$childComment.content",
               dateTimeOfComment: "$childComment.dateTimeOfComment",
               parentsComment: "$childComment.parentsComment",
-              isDelete: "$childComment.isDelete",
+              isDeleted: "$childComment.isDeleted",
             },
           },
         },
@@ -186,7 +186,7 @@ const findCommentTree = async (postId: string): Promise<commentResponseDto | nul
                             content: "$$this.content",
                             dateTimeOfComment: "$$this.dateTimeOfComment",
                             parentsComment: "$$this.parentsComment",
-                            isDelete: "$$this.isDelete",
+                            isDeleted: "$$this.isDeleted",
                             level: "$$this.level",
                             childComment: {
                               $filter: {
@@ -270,6 +270,7 @@ const deleteComment = async (
 ): Promise<commentResponseDto | any> => {
   try {
     const comment = await Comment.findByIdAndUpdate(commentId, {isDeleted: true});
+    // const comment = await Comment.findByIdAndRemove(commentId);  // 삭제용
     if (!comment) {
       return null;
     }
