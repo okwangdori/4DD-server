@@ -7,5 +7,4 @@ export interface unitDetailUpdateDto {
   detail_content?: string;
   useYN?: string;
   dateTimeOfPosting?: Date;
-  parent_id?: string;
 }

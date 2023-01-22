@@ -5,6 +5,7 @@ import boardRouter from "./boardRouter";
 import unitRouter from "./unitRouter";
 import unitDetailRouter from "./unitDetailRouter";
 import jwtMiddleware from "../middlewares/jwtMiddleware";
+import userSubInfo from "./userSubInfoRouter";
 
 const router: Router = Router();
 
@@ -22,5 +23,8 @@ router.use("/user", jwtMiddleware, userRouter);
 
 //게시판 api
 router.use("/board", jwtMiddleware, boardRouter);
+
+//사용자 기타 정보 api
+router.use("/user/subinfo", jwtMiddleware, userSubInfo);
 
 export default router;

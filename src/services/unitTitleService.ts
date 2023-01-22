@@ -6,6 +6,7 @@ import UnitTitle from "../models/UnitTitle";
 import logger from "../log/logger";
 import mongoose from "mongoose";
 import { AnyBulkWriteOperation, BulkWriteResult } from "mongodb";
+import { userSubInfoCreateDto } from "../interfaces/userSubInfo/userSubInfoCreateDto";
 
 const createUnitTitle = async (
   unitTitleCreateDto: unitTitleCreateDto
@@ -310,6 +311,31 @@ const findUnitTitleAll = async () => {
   }
 };
 
+//category_number 0,1을 제외한 모든 unit의 id 반환
+const findUnitTitleIdList = async () => {
+  try {
+    let unitTitle = await UnitTitle.find({
+      menu_level: 1,
+      category_number: { $nin: [0, 1] },
+    }).exec();
+
+    let list: userSubInfoCreateDto = {
+      views: [],
+      unit_total_count: 0,
+    };
+    unitTitle.map((e, i) => {
+      list.views.push({ unit: e._id });
+    });
+
+    list.unit_total_count = list.views.length;
+
+    return list;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
 const deleteUnitTitle = async (
   unitTitleId: string
 ): Promise<unitTitleResponseDto | null> => {
@@ -367,6 +393,7 @@ export default {
   findUnitTitleAndDetailById,
   findUnitTitleTree,
   findUnitTitleAll,
+  findUnitTitleIdList,
   deleteUnitTitle,
   deleteUnitTitleTree,
 };

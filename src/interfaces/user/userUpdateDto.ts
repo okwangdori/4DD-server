@@ -2,7 +2,8 @@
 import mongoose from "mongoose";
 
 export interface userUpdateDto {
-    _id?: mongoose.Schema.Types.ObjectId;
-    email?: string;
-    password?: string;
+  _id?: mongoose.Schema.Types.ObjectId;
+  email?: string;
+  password?: string;
+  user_sub_info?: mongoose.Schema.Types.ObjectId;
 }
