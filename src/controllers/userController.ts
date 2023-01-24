@@ -13,6 +13,8 @@ import {
   accessTokenCookieOptions,
   refreshTokenCookieOptions,
 } from "../constants";
+import { createToken } from "../utills/jwt.utill";
+import logger from "../log/logger";
 
 const register = async (req: Request, res: Response): Promise<void> => {
   const userInfoDto: userInfoDto = req.body;
@@ -125,8 +127,20 @@ const login = async (req: Request, res: Response): Promise<void> => {
   const userCreateDto: userCreateDto = req.body;
   try {
     const data = await userService.login(userCreateDto);
-    res.cookie(REFRESHTOKEN, data?.refreshToken, refreshTokenCookieOptions);
-    res.cookie(ACCESSTOKEN, data?.accessToken, accessTokenCookieOptions);
+    const tokenOption: any = {
+      id: data?._id,
+      email: data?.email,
+    };
+    res.cookie(
+      REFRESHTOKEN,
+      createToken("access", tokenOption),
+      refreshTokenCookieOptions
+    );
+    res.cookie(
+      ACCESSTOKEN,
+      createToken("refresh", tokenOption),
+      accessTokenCookieOptions
+    );
     if (data) {
       res
         .status(statusCode.CREATED)

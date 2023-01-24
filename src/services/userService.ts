@@ -13,8 +13,8 @@ interface userData {
   name?: string;
   email?: string;
   user_sub_info: mongoose.Schema.Types.ObjectId;
-  accessToken: string;
-  refreshToken: string;
+  // accessToken: string;
+  // refreshToken: string;
 }
 
 const checkName = async (
@@ -133,8 +133,8 @@ const login = async (
       name: user.name,
       email: user.email,
       user_sub_info: user.user_sub_info,
-      accessToken: createToken("access", tokenOption),
-      refreshToken: createToken("refresh", tokenOption),
+      // accessToken: createToken("access", tokenOption),
+      // refreshToken: createToken("refresh", tokenOption),
     };
     return userData;
   } catch (error) {

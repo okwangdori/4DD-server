@@ -9,7 +9,7 @@ import userSubInfo from "./userSubInfoRouter";
 
 const router: Router = Router();
 
-//글쓰기 읽기 수정하기 삭제하기 참고용 api
+//게시판 api
 router.use("/post", postRouter);
 
 //단원 api
@@ -22,7 +22,7 @@ router.use("/unit/detail", unitDetailRouter);
 router.use("/user", jwtMiddleware, userRouter);
 
 //게시판 api
-router.use("/board", jwtMiddleware, boardRouter);
+router.use("/board", boardRouter);
 
 //사용자 기타 정보 api
 router.use("/user/subinfo", jwtMiddleware, userSubInfo);
