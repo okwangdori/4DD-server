@@ -5,5 +5,6 @@ import { userCreateDto } from "./userCreateDto";
 export interface userResponseDto extends userCreateDto { // userCreateDto 를 상속받아 확장시킨다.
     _id?: mongoose.Schema.Types.ObjectId;
     accessToken?: string | null;
+    checkPassword?: string | null;
     refreshToken?: string | null;
 }

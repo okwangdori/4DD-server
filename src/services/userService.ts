@@ -121,7 +121,6 @@ const login = async (userCreateDto: userCreateDto): Promise<userResponseDto | nu
         return userData;
         
     } catch (error) {
-        console.log(error);
         throw error;
     }
 }
@@ -130,6 +129,11 @@ const changePassword = async (userUpdateDto: userUpdateDto): Promise<userRespons
     logger.info("########## id : "+ userUpdateDto._id);
     logger.info("########## password : "+ userUpdateDto.password);
     try {
+        const curPassword = (await User.findById(userUpdateDto._id))?.password;
+        if (curPassword !== userUpdateDto.curPassword) {
+            return {checkPassword: 'mismatch'};
+        }
+        logger.info("########## DB curPassword : "+ curPassword);
         const user = await User.findByIdAndUpdate(userUpdateDto._id, {password: userUpdateDto.password});
         if (!user) {
             return null;

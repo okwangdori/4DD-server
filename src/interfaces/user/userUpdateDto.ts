@@ -4,5 +4,6 @@ import mongoose from "mongoose";
 export interface userUpdateDto {
     _id?: mongoose.Schema.Types.ObjectId;
     email?: string;
+    curPassword?: string;
     password?: string;
 }

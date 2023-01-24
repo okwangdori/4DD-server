@@ -101,7 +101,12 @@ const changePassword = async (req: Request, res: Response): Promise<void> => {
     const userUpdateDto: userUpdateDto = req.body;    
     try {
         const data = await userService.changePassword(userUpdateDto);
-        res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.CHANGE_PASSWORD_SUCCESS, data));
+        const checkPassword = data?.checkPassword;
+        if(checkPassword === 'mismatch'){
+            res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, message.PASSWORD_MISMATCH));
+        }else{
+            res.status(statusCode.CREATED).send(util.success(statusCode.OK, message.CHANGE_PASSWORD_SUCCESS, data));
+        }
     } catch (error) {
         res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, message.INTERNAL_SERVER_ERROR));
     }
