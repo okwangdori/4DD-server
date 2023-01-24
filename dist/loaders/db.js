@@ -17,8 +17,9 @@ const config_1 = __importDefault(require("../config"));
 const logger_1 = __importDefault(require("../log/logger"));
 const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        mongoose_1.default.set("strictQuery", false);
         yield mongoose_1.default.connect(config_1.default.mongoURI);
-        mongoose_1.default.set('autoCreate', true);
+        mongoose_1.default.set("autoCreate", false);
         logger_1.default.info(`Mongoose Connected ...
         `);
     }

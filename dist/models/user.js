@@ -7,7 +7,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const UserSchema = new mongoose_1.default.Schema({
     name: {
         type: String,
-        required: true
+        required: true,
     },
     email: {
         type: String,
@@ -16,7 +16,13 @@ const UserSchema = new mongoose_1.default.Schema({
     password: {
         type: String,
         required: true,
-    }
+    },
+    //유저 회원가입 중 user생성하기 전에 userSubInfo 먼저 생성 후 생성된 userSubInfo의 아이디를 가져와서 저장
+    user_sub_info: {
+        type: mongoose_1.default.Schema.Types.ObjectId,
+        required: true,
+        ref: "UserSubInfo",
+    },
 });
 exports.default = mongoose_1.default.model("User", UserSchema);
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=User.js.map

@@ -3,7 +3,7 @@ import { userCreateDto } from "../interfaces/user/userCreateDto";
 import { userResponseDto } from "../interfaces/user/userResponseDto";
 import { userUpdateDto } from "../interfaces/user/userUpdateDto";
 import { userInfoDto } from "../interfaces/user/userInfoDto";
-import User from "../models/user";
+import User from "../models/User";
 import { createToken } from "../utills/jwt.utill";
 import logger from "../log/logger";
 import mongoose from "mongoose";

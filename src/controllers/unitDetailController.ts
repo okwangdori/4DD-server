@@ -59,7 +59,7 @@ const updateUnitDetail = async (req: Request, res: Response): Promise<void> => {
     if (data) {
       resultArr.push(data);
       titleData = await unitTitleService.updateUnitTitle(
-        unitDetailUpdateDto.parent_id as string,
+        JSON.stringify(unitDetailUpdateDto.parent_title_id),
         unitTitleUpdateDto
       );
     }

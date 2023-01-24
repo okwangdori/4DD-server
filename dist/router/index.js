@@ -6,14 +6,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const postRouter_1 = __importDefault(require("./postRouter"));
 const userRouter_1 = __importDefault(require("./userRouter"));
+const boardRouter_1 = __importDefault(require("./boardRouter"));
 const unitRouter_1 = __importDefault(require("./unitRouter"));
+const unitDetailRouter_1 = __importDefault(require("./unitDetailRouter"));
 const jwtMiddleware_1 = __importDefault(require("../middlewares/jwtMiddleware"));
+const userSubInfoRouter_1 = __importDefault(require("./userSubInfoRouter"));
 const router = (0, express_1.Router)();
 //글쓰기 읽기 수정하기 삭제하기 참고용 api
-router.use('/post', postRouter_1.default);
+router.use("/post", postRouter_1.default);
 //단원 api
-router.use('/unit/title', unitRouter_1.default);
+router.use("/unit/title", unitRouter_1.default);
+//단원별 상세 내용 api
+router.use("/unit/detail", unitDetailRouter_1.default);
 //사용자 api
-router.use('/user', jwtMiddleware_1.default, userRouter_1.default);
+router.use("/user", jwtMiddleware_1.default, userRouter_1.default);
+//게시판 api
+router.use("/board", jwtMiddleware_1.default, boardRouter_1.default);
+//사용자 기타 정보 api
+router.use("/user/subinfo", jwtMiddleware_1.default, userSubInfoRouter_1.default);
 exports.default = router;
 //# sourceMappingURL=index.js.map
