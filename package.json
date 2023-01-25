@@ -6,12 +6,14 @@
   "proxy": "http://localhost:8080",
   "scripts": {
     "dev": "nodemon",
-    "build": "tsc && node dist",
-    "start": "nodemon"
+    "build": "tsc",
+    "start": "nodemon",
+    "tsc": "./node_modules/typescript/bin/tsc"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^8.5.9",
     "@types/morgan": "^1.9.3",
+    "typescript": "^4.9.4",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

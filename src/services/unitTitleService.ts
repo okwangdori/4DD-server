@@ -5,24 +5,21 @@ import { unitTitleUpdateDto } from "../interfaces/unitTitle/unitTitleUpdateDto";
 import UnitTitle from "../models/UnitTitle";
 import logger from "../log/logger";
 import mongoose from "mongoose";
-import convertToTrees from "../utills/treeStructure";
-import { AnyBulkWriteOperation } from "mongodb";
+import { AnyBulkWriteOperation, BulkWriteResult } from "mongodb";
+import { userSubInfoCreateDto } from "../interfaces/userSubInfo/userSubInfoCreateDto";
 
 const createUnitTitle = async (
   unitTitleCreateDto: unitTitleCreateDto
 ): Promise<unitTitleBaseResponseDto> => {
   try {
-    // create를 위해 각 filed명에 값들을 할당시켜준다.
     const unitTitle = new UnitTitle({
       title: unitTitleCreateDto.title,
       content: unitTitleCreateDto.content,
       category: unitTitleCreateDto.category,
       category_number: unitTitleCreateDto.category_number,
+      parent_unit_id: unitTitleCreateDto.parent_unit_id,
       menu_level: unitTitleCreateDto.menu_level,
-      menu_id: unitTitleCreateDto.menu_id,
-      parents_menu_id: unitTitleCreateDto.parents_menu_id,
       useYN: unitTitleCreateDto.useYN,
-      additional: {},
     });
     await unitTitle.save();
 
@@ -110,6 +107,27 @@ const findUnitTitleById = async (
   }
 };
 
+const findUnitTitleAndDetailById = async (
+  unitTitleId: string
+): Promise<unitTitleResponseDto | null> => {
+  try {
+    // const unitTitle = await UnitTitle.findById(unitTitleId);
+
+    let unitTitle = await UnitTitle.findById(unitTitleId)
+      .populate("content")
+      .sort({ category_number: 1, dateTimeOfUnitTitleCreating: -1 })
+      .exec();
+
+    if (!unitTitle) {
+      return null;
+    }
+    return unitTitle;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
 const findUnitTitleTree = async (
   unitTitleId: string
 ): Promise<unitTitleResponseDto | null | any[]> => {
@@ -121,9 +139,9 @@ const findUnitTitleTree = async (
       {
         $graphLookup: {
           from: "unittitles",
-          startWith: "$parents_menu_id",
-          connectFromField: "parents_menu_id",
-          connectToField: "menu_id",
+          startWith: "$_id",
+          connectFromField: "_id",
+          connectToField: "parent_unit_id",
           depthField: "level",
           as: "childMenu",
         },
@@ -146,9 +164,9 @@ const findUnitTitleTree = async (
           content: { $first: "$content" },
           category: { $first: "$category" },
           category_number: { $first: "$category_number" },
-          parents_menu_id: { $first: "$parents_menu_id" },
-          menu_id: { $first: "$menu_id" },
+          parent_unit_id: { $first: "$parent_unit_id" },
           useYN: { $first: "$useYN" },
+          menu_level: { $first: "$menu_level" },
           childMenu: {
             $push: {
               _id: "$childMenu._id",
@@ -156,9 +174,9 @@ const findUnitTitleTree = async (
               content: "$childMenu.content",
               category: "$childMenu.category",
               category_number: "$childMenu.category_number",
-              parents_menu_id: "$childMenu.parents_menu_id",
-              menu_id: "$childMenu.menu_id",
+              parent_unit_id: "$childMenu.parent_unit_id",
               useYN: "$childMenu.useYN",
+              menu_level: "$childMenu.menu_level",
               level: "$childMenu.level",
             },
           },
@@ -179,14 +197,18 @@ const findUnitTitleTree = async (
                   vars: {
                     prev: {
                       $cond: [
-                        { $eq: ["$$value.level", "$$this.level"] },
+                        {
+                          $eq: ["$$value.level", "$$this.level"],
+                        },
                         "$$value.prevChild",
                         "$$value.presentChild",
                       ],
                     },
                     current: {
                       $cond: [
-                        { $eq: ["$$value.level", "$$this.level"] },
+                        {
+                          $eq: ["$$value.level", "$$this.level"],
+                        },
                         "$$value.presentChild",
                         [],
                       ],
@@ -205,19 +227,16 @@ const findUnitTitleTree = async (
                             content: "$$this.content",
                             category: "$$this.category",
                             category_number: "$$this.category_number",
-                            parents_menu_id: "$$this.parents_menu_id",
-                            menu_id: "$$this.menu_id",
+                            parent_unit_id: "$$this.parent_unit_id",
                             useYN: "$$this.useYN",
+                            menu_level: "$$this.menu_level",
                             level: "$$this.level",
                             childMenu: {
                               $filter: {
                                 input: "$$prev",
                                 as: "e",
                                 cond: {
-                                  $eq: [
-                                    "$$e.menu_id",
-                                    "$$this.parents_menu_id",
-                                  ],
+                                  $eq: ["$$e.parent_unit_id", "$$this._id"],
                                 },
                               },
                             },
@@ -232,7 +251,11 @@ const findUnitTitleTree = async (
           },
         },
       },
-      { $addFields: { childMenu: "$childMenu.presentChild" } },
+      {
+        $addFields: {
+          childMenu: "$childMenu.presentChild",
+        },
+      },
     ]);
 
     if (!unitTitle) {
@@ -245,12 +268,14 @@ const findUnitTitleTree = async (
   }
 };
 
+// TODO HWI 이미지는 aws s3와같은 storage에 저장하고 db에는 해당 이미지에 접근가능한경로를 저장
 const findUnitTitleAll = async () => {
   try {
     let unitTitle = await UnitTitle.find({ menu_level: 1 })
-      .populate("children")
       .sort({ category_number: 1, dateTimeOfUnitTitleCreating: -1 })
       .exec();
+
+    // .populate("children")
 
     //오브젝트용 가공 샘플
     // interface ObjType {
@@ -286,6 +311,31 @@ const findUnitTitleAll = async () => {
   }
 };
 
+//category_number 0,1을 제외한 모든 unit의 id 반환
+const findUnitTitleIdList = async () => {
+  try {
+    let unitTitle = await UnitTitle.find({
+      menu_level: 1,
+      category_number: { $nin: [0, 1] },
+    }).exec();
+
+    let list: userSubInfoCreateDto = {
+      views: [],
+      unit_total_count: 0,
+    };
+    unitTitle.map((e, i) => {
+      list.views.push({ unit: e._id });
+    });
+
+    list.unit_total_count = list.views.length;
+
+    return list;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
 const deleteUnitTitle = async (
   unitTitleId: string
 ): Promise<unitTitleResponseDto | null> => {
@@ -301,12 +351,49 @@ const deleteUnitTitle = async (
   }
 };
 
+let deleteBulkArr: AnyBulkWriteOperation<any>[] = [];
+
+const getDeleteChildId = (list: any[]) => {
+  list.map((v: { [key: string]: any }, i: number) => {
+    deleteBulkArr.push({
+      deleteOne: {
+        filter: { _id: v._id },
+      },
+    });
+    if (v.childMenu.length > 0) {
+      getDeleteChildId(v.childMenu);
+    }
+  });
+};
+
+const deleteUnitTitleTree = async (
+  list: any[]
+): Promise<BulkWriteResult | null> => {
+  try {
+    getDeleteChildId([list]);
+
+    const unitTitle = await UnitTitle.bulkWrite(deleteBulkArr);
+
+    if (!unitTitle) {
+      return null;
+    }
+
+    return unitTitle;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
 export default {
   createUnitTitle,
   updateUnitTitle,
   updateUnitTitleTree,
   findUnitTitleById,
+  findUnitTitleAndDetailById,
   findUnitTitleTree,
   findUnitTitleAll,
+  findUnitTitleIdList,
   deleteUnitTitle,
+  deleteUnitTitleTree,
 };

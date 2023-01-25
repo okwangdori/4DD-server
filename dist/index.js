@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-require('dotenv').config();
+require("dotenv").config();
 const express_1 = __importDefault(require("express"));
 const config_1 = __importDefault(require("./config"));
 const app = (0, express_1.default)();
@@ -19,7 +19,6 @@ app.use(express_1.default.json());
 app.use(cors());
 app.use(customMorgan_1.default);
 app.use(router_1.default); //라우터 분리
-;
 // 모든 에러에 대한 핸들링
 app.use(function (err, req, res, next) {
     res.locals.message = err.message;

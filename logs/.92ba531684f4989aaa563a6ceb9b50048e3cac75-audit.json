@@ -6,14 +6,14 @@
     "auditLog": "C:\\Workspace\\project\\4DD_server\\logs\\.92ba531684f4989aaa563a6ceb9b50048e3cac75-audit.json",
     "files": [
         {
-            "date": 1667297724642,
-            "name": "C:\\Workspace\\project\\4DD_server\\logs\\2022-11-01.exception.log",
-            "hash": "729bf04e55ac50864cf0274d1dab373d49c6c5ed50344a960654277b91fee053"
-        },
-        {
             "date": 1667895917046,
             "name": "C:\\Workspace\\project\\4DD_server\\logs\\2022-11-08.exception.log",
             "hash": "502ec47c76411235942370a121c9b23138adfe3ddc58c8d89a5fcd834748d7aa"
+        },
+        {
+            "date": 1674648182729,
+            "name": "C:\\Workspace\\project\\4DD_server\\logs\\2023-01-25.exception.log",
+            "hash": "bccbd2fcb02add2aef81b15b5dc05cbed55ac29e48a8042f38deb82ade3e675a"
         }
     ],
     "hashType": "sha256"

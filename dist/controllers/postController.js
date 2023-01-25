@@ -27,8 +27,9 @@ const createPost = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     }
 });
 const updatePost = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const postUpdateDto = req.body;
-    const { postId } = req.params;
+    const postId = req.query.postId;
+    let postUpdateDto = req.body;
+    postUpdateDto.dateTimeOfPosting = Date.now();
     try {
         const data = yield services_1.postService.updatePost(postId, postUpdateDto);
         res.status(statusCode_1.default.CREATED).send(util_1.default.success(statusCode_1.default.OK, responseMessage_1.default.UPDATE_POST_SUCCESS, data));
@@ -47,8 +48,17 @@ const findPostById = (req, res) => __awaiter(void 0, void 0, void 0, function* (
         res.status(statusCode_1.default.INTERNAL_SERVER_ERROR).send(util_1.default.fail(statusCode_1.default.INTERNAL_SERVER_ERROR, responseMessage_1.default.INTERNAL_SERVER_ERROR));
     }
 });
+const getPosts = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const data = yield services_1.postService.getPosts();
+        res.status(statusCode_1.default.CREATED).send(util_1.default.success(statusCode_1.default.OK, responseMessage_1.default.READ_POST_SUCCESS, data));
+    }
+    catch (error) {
+        res.status(statusCode_1.default.INTERNAL_SERVER_ERROR).send(util_1.default.fail(statusCode_1.default.INTERNAL_SERVER_ERROR, responseMessage_1.default.INTERNAL_SERVER_ERROR));
+    }
+});
 const deletePost = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const { postId } = req.params;
+    const postId = req.query.postId;
     try {
         const data = yield services_1.postService.deletePost(postId);
         res.status(statusCode_1.default.CREATED).send(util_1.default.success(statusCode_1.default.OK, responseMessage_1.default.DELETE_POST_SUCCESS, data));
@@ -61,6 +71,7 @@ exports.default = {
     createPost,
     updatePost,
     findPostById,
+    getPosts,
     deletePost,
 };
 //# sourceMappingURL=postController.js.map

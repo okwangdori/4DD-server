@@ -13,13 +13,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const Post_1 = __importDefault(require("../models/Post"));
+const moment_1 = __importDefault(require("moment"));
 const createPost = (postCreateDto) => __awaiter(void 0, void 0, void 0, function* () {
     var _a, _b;
     try {
         // create를 위해 각 filed명에 값들을 할당시켜준다.
         const post = new Post_1.default({
+            userName: postCreateDto.userName,
             title: postCreateDto.title,
             content: postCreateDto.content,
+            dateTimeOfPosting: (0, moment_1.default)().format("YYYY-MM-DD hh:mm:ss"),
             additional: {
                 category: (_a = postCreateDto.additional) === null || _a === void 0 ? void 0 : _a.category,
                 season: (_b = postCreateDto.additional) === null || _b === void 0 ? void 0 : _b.season,
@@ -64,6 +67,19 @@ const findPostById = (postId) => __awaiter(void 0, void 0, void 0, function* () 
         throw error;
     }
 });
+const getPosts = () => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const posts = yield Post_1.default.find();
+        if (!posts) {
+            return null;
+        }
+        return posts;
+    }
+    catch (error) {
+        console.log(error);
+        throw error;
+    }
+});
 const deletePost = (postId) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const post = yield Post_1.default.findByIdAndDelete(postId);
@@ -81,6 +97,7 @@ exports.default = {
     createPost,
     updatePost,
     findPostById,
+    getPosts,
     deletePost,
 };
 //# sourceMappingURL=postService.js.map

@@ -86,10 +86,7 @@ const updateCommentTree = async (
   }
 };
 
-const findPostById = async (
-  req: Request,
-  res: Response
-): Promise<void> => {
+const findPostById = async (req: Request, res: Response): Promise<void> => {
   const { postId } = req.params;
   try {
     const data = await commentService.findPostById(postId);
@@ -108,10 +105,7 @@ const findPostById = async (
   }
 };
 
-const findCommentTree = async (
-  req: Request,
-  res: Response
-): Promise<void> => {
+const findCommentTree = async (req: Request, res: Response): Promise<void> => {
   const { postId } = req.params;
   try {
     const data = await commentService.findCommentTree(postId);
@@ -148,7 +142,7 @@ const findCommentAll = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-const deleteComment = async (req: Request, res: Response): Promise<void> => {  
+const deleteComment = async (req: Request, res: Response): Promise<void> => {
   const commentId: any = req.query.commentId;
   try {
     const data = await commentService.deleteComment(commentId);
@@ -178,4 +172,3 @@ export default {
   findCommentAll,
   deleteComment,
 };
-

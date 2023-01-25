@@ -1,19 +1,19 @@
 import mongoose from "mongoose";
 import config from "../config";
-import logger from '../log/logger';
+import logger from "../log/logger";
 
 const connectDB = async () => {
-    try {
-        await mongoose.connect(config.mongoURI);
+  try {
+    mongoose.set("strictQuery", false);
+    await mongoose.connect(config.mongoURI);
+    mongoose.set("autoCreate", false);
 
-        mongoose.set('autoCreate', true);
-
-        logger.info(`Mongoose Connected ...
+    logger.info(`Mongoose Connected ...
         `);
-    } catch (err: any) {
-        logger.error(err.message);
-        process.exit(1);
-    }
+  } catch (err: any) {
+    logger.error(err.message);
+    process.exit(1);
+  }
 };
 
 export default connectDB;

@@ -1,12 +1,12 @@
-// import { Router } from "express";
-// import { unitDetailController } from "../controllers";
+import { Router } from "express";
+import { unitDetailController } from "../controllers";
 
-// const router: Router = Router();
+const router: Router = Router();
 
-// router.post('/', unitTitleController.createUnitTitle);
-// router.put('/:unitTitleId', unitTitleController.updateUnitTitle);
-// router.get('/', unitTitleController.findUnitTitleAll);
-// router.get('/:unitTitleId', unitTitleController.findUnitTitleById);
-// router.delete('/:unitTitleId', unitTitleController.deleteUnitTitle);
+router.post("/", unitDetailController.createUnitDetail);
+router.put("/:unitDetailId", unitDetailController.updateUnitDetail);
+router.get("/", unitDetailController.findUnitDetailAll);
+router.get("/:unitDetailId", unitDetailController.findUnitDetailById);
+router.delete("/:unitDetailId", unitDetailController.deleteUnitDetail);
 
-// export default router;
+export default router;
