@@ -44,7 +44,6 @@ const findAndUpdateUserSubInfo = async (
   res: Response
 ): Promise<void> => {
   const userSubInfoUpdateDto: userSubInfoUpdateDto = req.body;
-
   try {
     const { userSubInfoId } = req.params;
     const data = await userSubInfoService.findUserSubInfoById(userSubInfoId);
@@ -62,7 +61,6 @@ const findAndUpdateUserSubInfo = async (
     }
 
     userSubInfoUpdateDto.likes = data?.likes;
-
     const updateData = await userSubInfoService.updateUserSubInfo(
       userSubInfoId,
       userSubInfoUpdateDto

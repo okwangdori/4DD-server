@@ -136,7 +136,7 @@ const login = async (
   try {
     const user = await User.findOne({ email: userCreateDto.email }).populate({
       path: "user_sub_info",
-      populate: { path: "views.unit" },
+      populate: { path: "views.unit likes" }
     });
 
     // 계정, 비밀번호 체크
