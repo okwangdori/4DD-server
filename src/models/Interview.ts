@@ -1,10 +1,15 @@
 import mongoose from "mongoose";
 import { interviewInfo } from "../interfaces/interview/interviewInfo";
 
+// const mongoose = require("mongoose");
+const AutoIncrement = require("mongoose-sequence")(mongoose);
 const { Schema } = mongoose;
 
 const InterviewSchema = new Schema(
   {
+    // sequence_number: {
+
+    // },
     main_category: {
       type: String,
       required: true,
@@ -45,6 +50,10 @@ const InterviewSchema = new Schema(
       type: Array,
       required: true,
     },
+    writer: {
+      type: String,
+      require: true,
+    },
     useYN: {
       type: String,
       required: true,
@@ -64,6 +73,8 @@ InterviewSchema.virtual("interviews", {
   localField: "_id",
   foreignField: "parent",
 });
+
+InterviewSchema.plugin(AutoIncrement, { inc_field: "sequence_number" });
 
 export default mongoose.model<interviewInfo & mongoose.Document>(
   "Interview",

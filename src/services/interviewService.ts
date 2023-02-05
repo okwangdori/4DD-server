@@ -37,6 +37,16 @@ const createInterview = async (
   }
 };
 
+// const autoIncObjectId = (seqName : string) => {
+
+//   var autoInc = Interview.seq.findAndModify({
+//       query: {_id: seqName },
+//       update: { $inc: {seq_value:1}},
+//       new: true
+//   });
+//   return autoInc.seq_value;
+// }
+
 const updateInterview = async (
   interviewId: string,
   interviewUpdateDto: interviewUpdateDto
@@ -71,34 +81,24 @@ const findInterviewById = async (
   }
 };
 
-// const findInterviewAll = async () => {
-//   try {
-//     let unitTitle = await UnitTitle.find({ menu_level: 1 })
-//       .populate("children")
-//       .sort({ category_number: 1, dateTimeOfUnitTitleCreating: -1 })
-//       .exec();
+const findAllInterviewById = async () => {
+  try {
+    let interview = await Interview.find()
+      .sort({ dateTimeOfPosting: -1 })
+      .exec();
 
-//     let list: any[] = [];
+    let list: any[] = [];
 
-//     if (!unitTitle) {
-//       return null;
-//     } else {
-//       unitTitle.map((e, i) => {
-//         if (list[e.category_number]) {
-//           list[e.category_number].push(e);
-//         } else {
-//           list[e.category_number] = [];
-//           list[e.category_number].push(e);
-//         }
-//       });
-//     }
+    if (!interview) {
+      return null;
+    }
 
-//     return list;
-//   } catch (error) {
-//     logger.error(error);
-//     throw error;
-//   }
-// };
+    return interview;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
 
 const deleteInterview = async (
   interviewId: string
@@ -120,5 +120,6 @@ export default {
   updateInterview,
   findInterviewById,
   //   findInterviewAll,
+  findAllInterviewById,
   deleteInterview,
 };

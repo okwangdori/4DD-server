@@ -89,23 +89,26 @@ const findInterviewById = async (
   }
 };
 
-// const findInterviewAll = async (req: Request, res: Response): Promise<void> => {
-//   try {
-//     const data = await interviewService.findInterviewAll();
-//     res
-//       .status(statusCode.CREATED)
-//       .send(util.success(statusCode.OK, message.READ_INTERVIEW_SUCCESS, data));
-//   } catch (error) {
-//     res
-//       .status(statusCode.INTERNAL_SERVER_ERROR)
-//       .send(
-//         util.fail(
-//           statusCode.INTERNAL_SERVER_ERROR,
-//           message.INTERNAL_SERVER_ERROR
-//         )
-//       );
-//   }
-// };
+const findAllInterviewById = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const data = await interviewService.findAllInterviewById();
+    res
+      .status(statusCode.CREATED)
+      .send(util.success(statusCode.OK, message.READ_INTERVIEW_SUCCESS, data));
+  } catch (error) {
+    res
+      .status(statusCode.INTERNAL_SERVER_ERROR)
+      .send(
+        util.fail(
+          statusCode.INTERNAL_SERVER_ERROR,
+          message.INTERNAL_SERVER_ERROR
+        )
+      );
+  }
+};
 
 const deleteInterview = async (req: Request, res: Response): Promise<void> => {
   const { interviewId } = req.params;
@@ -134,5 +137,6 @@ export default {
   updateInterview,
   findInterviewById,
   //   findInterviewAll,
+  findAllInterviewById,
   deleteInterview,
 };

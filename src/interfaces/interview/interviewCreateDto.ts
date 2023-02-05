@@ -34,6 +34,7 @@ export interface interviewCreateDto {
   //answer_example은 없어도 되지만 interview_answer에서 적절한 해답을 적었는지 유효성검사 필요
   answer_example?: any[];
 
+  writer: string;
   useYN?: string;
   dateTimeOfPosting?: Date;
 }

@@ -11,6 +11,7 @@ export interface interviewInfo {
   interview_contents: string;
   interview_answer: string;
   answer_example: any[];
+  writer: string;
   useYN?: string;
   dateTimeOfPosting?: Date;
 }
