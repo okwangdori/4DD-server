@@ -40,7 +40,9 @@ const findAndUpdateUserSubInfo = (req, res) => __awaiter(void 0, void 0, void 0,
         if (data) {
             if (data.likes) {
                 if (req.body.like) {
-                    data.likes.push(req.body.id);
+                    if (data.likes.indexOf(req.body.id) == -1) {
+                        data.likes.push(req.body.id);
+                    }
                 }
                 else {
                     data.likes.splice(data.likes.indexOf(req.body.id), 1);

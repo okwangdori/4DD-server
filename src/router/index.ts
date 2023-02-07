@@ -5,7 +5,9 @@ import boardRouter from "./boardRouter";
 import unitRouter from "./unitRouter";
 import unitDetailRouter from "./unitDetailRouter";
 import jwtMiddleware from "../middlewares/jwtMiddleware";
-import userSubInfo from "./userSubInfoRouter";
+import userSubInfoRouter from "./userSubInfoRouter";
+import interviewRouter from "./interviewRouter";
+// import interviewContentsRouter from "./interviewContentsRouter";
 
 const router: Router = Router();
 
@@ -25,6 +27,12 @@ router.use("/user", jwtMiddleware, userRouter);
 router.use("/board", boardRouter);
 
 //사용자 기타 정보 api
-router.use("/user/subinfo", jwtMiddleware, userSubInfo);
+router.use("/user/subinfo", jwtMiddleware, userSubInfoRouter);
+
+//면접질문 목록
+router.use("/interview", interviewRouter);
+
+//면접질문 내용 목록
+// router.use("/interview/contents", interviewContentsRouter);
 
 export default router;

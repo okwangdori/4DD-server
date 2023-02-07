@@ -13,7 +13,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const User_1 = __importDefault(require("../models/User"));
-const jwt_utill_1 = require("../utills/jwt.utill");
 const logger_1 = __importDefault(require("../log/logger"));
 const checkName = (userInfoDto) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -115,8 +114,8 @@ const login = (userCreateDto) => __awaiter(void 0, void 0, void 0, function* () 
             name: user.name,
             email: user.email,
             user_sub_info: user.user_sub_info,
-            accessToken: (0, jwt_utill_1.createToken)("access", tokenOption),
-            refreshToken: (0, jwt_utill_1.createToken)("refresh", tokenOption),
+            // accessToken: createToken("access", tokenOption),
+            // refreshToken: createToken("refresh", tokenOption),
         };
         return userData;
     }

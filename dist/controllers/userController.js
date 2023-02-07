@@ -17,6 +17,7 @@ const responseMessage_1 = __importDefault(require("../modules/responseMessage"))
 const util_1 = __importDefault(require("../modules/util"));
 const services_1 = require("../services");
 const constants_1 = require("../constants");
+const jwt_utill_1 = require("../utills/jwt.utill");
 const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const userInfoDto = req.body;
     const userCreateDto = req.body;
@@ -97,8 +98,12 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const userCreateDto = req.body;
     try {
         const data = yield services_1.userService.login(userCreateDto);
-        res.cookie(constants_1.REFRESHTOKEN, data === null || data === void 0 ? void 0 : data.refreshToken, constants_1.refreshTokenCookieOptions);
-        res.cookie(constants_1.ACCESSTOKEN, data === null || data === void 0 ? void 0 : data.accessToken, constants_1.accessTokenCookieOptions);
+        const tokenOption = {
+            id: data === null || data === void 0 ? void 0 : data._id,
+            email: data === null || data === void 0 ? void 0 : data.email,
+        };
+        res.cookie(constants_1.REFRESHTOKEN, (0, jwt_utill_1.createToken)("access", tokenOption), constants_1.refreshTokenCookieOptions);
+        res.cookie(constants_1.ACCESSTOKEN, (0, jwt_utill_1.createToken)("refresh", tokenOption), constants_1.accessTokenCookieOptions);
         if (data) {
             res
                 .status(statusCode_1.default.CREATED)

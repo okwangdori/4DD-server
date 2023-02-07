@@ -33,7 +33,13 @@ const message = {
   CHANGE_PASSWORD_SUCCESS: '비밀번호 변경 성공',
   ALREADY_EXIST_NAME: '이미 존재하는 닉네임입니다.',
   ALREADY_EXIST_EMAIL: '이미 존재하는 이메일입니다.',
-  PASSWORD_MISMATCH: '현재 비밀번호가 일치하지 않습니다.'
+  PASSWORD_MISMATCH: '현재 비밀번호가 일치하지 않습니다.',
+
+  // 면접
+  READ_INTERVIEW_SUCCESS: "면접질문 조회 성공",
+  CREATE_INTERVIEW_SUCCESS: "면접질문 생성 성공",
+  DELETE_INTERVIEW_SUCCESS: "면접질문 삭제 성공",
+  UPDATE_INTERVIEW_SUCCESS: "면접질문 수정 성공",
 };
 
 export default message;

@@ -4,6 +4,7 @@ import userService from "./userService";
 import unitTitleService from "./unitTitleService";
 import unitDetailService from "./unitDetailService";
 import userSubInfoService from "./userSubInfoService";
+import interviewService from "./interviewService";
 
 //service index file
 export {
@@ -13,4 +14,5 @@ export {
   userSubInfoService,
   unitTitleService,
   unitDetailService,
+  interviewService,
 };
