@@ -98,6 +98,6 @@ exports.default = {
     updatePost,
     findPostById,
     getPosts,
-    deletePost,
+    deletePost
 };
 //# sourceMappingURL=postService.js.map

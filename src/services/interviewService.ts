@@ -81,13 +81,31 @@ const findInterviewById = async (
   }
 };
 
-const findAllInterviewById = async () => {
+const findAllInterview = async () => {
   try {
     let interview = await Interview.find()
       .sort({ dateTimeOfPosting: -1 })
       .exec();
 
-    let list: any[] = [];
+    if (!interview) {
+      return null;
+    }
+
+    return interview;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+};
+
+const findInterviewMainCategory = async () => {
+  try {
+    let interview = await Interview.find(
+      {},
+      { _id: 0, main_category: 1, main_category_code: 1 }
+    )
+      .sort({ dateTimeOfPosting: -1 })
+      .exec();
 
     if (!interview) {
       return null;
@@ -119,7 +137,7 @@ export default {
   createInterview,
   updateInterview,
   findInterviewById,
-  //   findInterviewAll,
-  findAllInterviewById,
+  findAllInterview,
+  findInterviewMainCategory,
   deleteInterview,
 };
