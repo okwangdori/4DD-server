@@ -36,7 +36,6 @@ const UnitSchema = new Schema(
     },
     title_image_path: {
       type: String,
-      required: true,
     },
     dateTimeOfUnitTitleCreating: {
       type: Date,

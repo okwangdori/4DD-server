@@ -10,8 +10,8 @@ import morgan from "./log/customMorgan";
 
 connectDB(); // DB 연결하기
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.urlencoded({ limit: "100mb", extended: false }));
+app.use(express.json({ limit: "100mb" }));
 
 //   app.use(morgan('dev'))
 app.use(cors());
