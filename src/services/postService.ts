@@ -65,7 +65,9 @@ const findPostById = async (postId: string): Promise<postResponseDto | null> => 
 
 const getPosts = async (): Promise<any> => {
     try {
-        const posts = await Post.find();
+        const posts = await Post.find()
+        .sort({ dateTimeOfPosting: -1 })
+        .exec();
         if (!posts) {
             return null;
         }
